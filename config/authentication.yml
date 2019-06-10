@@ -4,4 +4,7 @@ wirecard:
 
 conta_sandbox:
   usr: 'edson.pita.sp@gmail.com'
-  pass: ' cervejaipa'
+  pass: 'cervejaipa'
+
+# usr: ${user.name}
+# variavel de ambiente

@@ -1,10 +1,9 @@
-Feature: Creating a payment
+Feature: Creating a order
 
   Scenario: Creating a valid order one item
-    Given
-    When
-    And
-    Then
+    Given that I have a valid creation contract
+    When I send the requisition
+    Then I receive confirmation of the creation
 
   Scenario: Creating a valid order two item
     Given

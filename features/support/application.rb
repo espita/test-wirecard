@@ -9,7 +9,7 @@ class ApplicationSettings
     $env = ENV['ENV'] || 'qa'
     puts 'Working on ' + $env
 
-    $moip_url = {
+    $wirecard_url = {
       'qa' => 'https://sandbox.moip.com.br',
     }
 

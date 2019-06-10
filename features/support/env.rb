@@ -16,6 +16,9 @@ require 'yaml'
 require "faker"
 require "rubocop"
 require "cpf_faker"
+require_relative "application.rb"
+
+ApplicationSettings.new.setup!
 
 case ENV['BROWSER']
 	when 'ff'

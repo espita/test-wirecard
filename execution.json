@@ -1,0 +1,370 @@
+[
+  {
+    "uri": "features/orders_wirecard.feature",
+    "id": "creating-a-order",
+    "keyword": "Feature",
+    "name": "Creating a order",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "creating-a-order;creating-a-valid-order-one-item",
+        "keyword": "Scenario",
+        "name": "Creating a valid order one item",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21469
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10752
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65711
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a valid creation contract",
+            "line": 4,
+            "output": [
+              "orderCode: 60133830\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 914397
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 5,
+            "output": [
+              "{\"ownId\"=>\"60133830\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"pedido walmart teste 40\", \"category\"=>\"CLOTHING\", \"quantity\"=>1, \"detail\"=>\"Mais info...\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"60133830\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>8, \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143857
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `code' for nil:NilClass (NoMethodError)\n./features/classes/http_helper.rb:21:in `handler'\n./features/step_definitions/steps.rb:14:in `/^I receive confirmation of the creation$/'\nfeatures/orders_wirecard.feature:6:in `Then I receive confirmation of the creation'",
+              "duration": 1136177
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21214
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;creating-a-valid-order-two-item",
+        "keyword": "Scenario",
+        "name": "Creating a valid order two item",
+        "description": "    Given\n    When\n    And\n    Then",
+        "line": 8,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12076
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7932
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47505
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7896
+            },
+            "output": [
+              "orderCode: 60133830\n"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-ownid-more-then-45-characters",
+        "keyword": "Scenario",
+        "name": "Validate field ownId more then 45 characters",
+        "description": "    Given\n    When\n    And\n    Then",
+        "line": 14,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9704
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7025
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36154
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7115
+            },
+            "output": [
+              "orderCode: 60133830\n"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-amount.currency-with-american-currency-code",
+        "keyword": "Scenario",
+        "name": "Validate field amount.currency with american currency code",
+        "description": "    Given\n    When\n    And\n    Then",
+        "line": 20,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10301
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7887
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41033
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8409
+            },
+            "output": [
+              "orderCode: 60133830\n"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-amount.currency-with-american-currency-codemore-then-3-characters",
+        "keyword": "Scenario",
+        "name": "Validate field amount.currency with american currency codemore then 3 characters",
+        "description": "    Given\n    When\n    And\n    Then",
+        "line": 26,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9605
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7256
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38516
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7295
+            },
+            "output": [
+              "orderCode: 60133830\n"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/payment_wirecard.feature",
+    "id": "creating-a-payment",
+    "keyword": "Feature",
+    "name": "Creating a payment",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "creating-a-payment;creating",
+        "keyword": "Scenario",
+        "name": "Creating",
+        "description": "    Given\n    When\n    And\n    Then",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9508
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7159
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60046
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "orderCode: 60133830\n"
+            ],
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9369
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
