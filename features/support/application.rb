@@ -1,3 +1,4 @@
+# encode: UTF-8
 class ApplicationSettings
   def setup!
     setup_defaults!
@@ -10,7 +11,7 @@ class ApplicationSettings
     puts 'Working on ' + $env
 
     $wirecard_url = {
-      'qa' => 'https://sandbox.moip.com.br',
+      'qa' => 'https://sandbox.moip.com.br'
     }
 
     end

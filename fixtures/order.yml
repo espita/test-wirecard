@@ -1,33 +1,86 @@
 ---
-ownId: '2017112762'
-amount:
-  currency: BRL
-  subtotals:
-    shipping: 1000
-items:
-- product: pedido walmart teste 40
-  category: CLOTHING
-  quantity: 1
-  detail: Mais info...
-  price: 1000
-customer:
-  ownId: '12345601'
-  fullname: Jose Silva
-  email: nome@email.com
-  birthDate: '1988-12-30'
-  taxDocument:
-    type: CPF
-    number: '22222222222'
-  phone:
-    countryCode: '55'
-    areaCode: '11'
-    number: '66778899'
-  shippingAddress:
-    street: Avenida Faria Lima
-    streetNumber: 2927
-    complement: 8
-    district: Itaim
-    city: Sao Paulo
-    state: SP
-    country: BRA
-    zipCode: '01234000'
+oneItem:
+  ownId: '2017112762'
+  amount:
+    currency: BRL
+    subtotals:
+      shipping: 1000
+  items:
+  - product: Hercules Double IPA
+    category: FOOD,_BEVERAGES_AND_TOBACCO
+    quantity: 1
+    detail: Mais info...
+    price: 1000
+  customer:
+    ownId: '12345601'
+    fullname: Jose Silva
+    email: nome@email.com
+    birthDate: '1988-12-30'
+    taxDocument:
+      type: CPF
+      number: '22222222222'
+    phone:
+      countryCode: '55'
+      areaCode: '11'
+      number: '66778899'
+    shippingAddress:
+      street: Avenida Faria Lima
+      streetNumber: 2927
+      complement: 'Casa'
+      district: Itaim
+      city: Sao Paulo
+      state: SP
+      country: BRA
+      zipCode: '01234000'
+twoItem:
+  ownId: '2017112762'
+  amount:
+    currency: BRL
+    subtotals:
+      shipping: 1000
+  items:
+  - product: Hercules Double IPA
+    category: FOOD,_BEVERAGES_AND_TOBACCO
+    quantity: 1
+    detail: Mais info...
+    price: 1000
+  - product: Hercules Red Ale
+    category: FOOD,_BEVERAGES_AND_TOBACCO
+    quantity: 1
+    detail: Mais info...
+    price: 1000
+  customer:
+    ownId: '12345601'
+    fullname: Jose Silva
+    email: nome@email.com
+    birthDate: '1988-12-30'
+    taxDocument:
+      type: CPF
+      number: '22222222222'
+    phone:
+      countryCode: '55'
+      areaCode: '11'
+      number: '66778899'
+    shippingAddress:
+      street: Avenida Faria Lima
+      streetNumber: 2927
+      complement: 'Casa'
+      district: Itaim
+      city: Sao Paulo
+      state: SP
+      country: BRA
+      zipCode: '01234000'
+custumerId:
+  ownId: '2017112762'
+  amount:
+    currency: BRL
+    subtotals:
+      shipping: 1000
+  items:
+  - product: 'Hercules Double IPA'
+    category: 'FOOD,_BEVERAGES_AND_TOBACCO'
+    quantity: 1
+    detail: 'India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.'
+    price: 1000
+  customer:
+    id: 'CUS-DF83DERLXE03'

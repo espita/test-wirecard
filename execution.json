@@ -5,15 +5,37 @@
     "keyword": "Feature",
     "name": "Creating a order",
     "description": "",
-    "line": 1,
+    "line": 4,
+    "tags": [
+      {
+        "name": "@create_order",
+        "line": 2
+      }
+    ],
+    "comments": [
+      {
+        "value": "# encoding: utf-8",
+        "line": 1
+      }
+    ],
     "elements": [
       {
-        "id": "creating-a-order;creating-a-valid-order-one-item",
+        "id": "creating-a-order;creating-a-valid-order-existing-custumer",
         "keyword": "Scenario",
-        "name": "Creating a valid order one item",
+        "name": "Creating a valid order existing custumer",
         "description": "",
-        "line": 3,
+        "line": 18,
         "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@existing_custumer",
+            "line": 17
+          }
+        ],
         "before": [
           {
             "match": {
@@ -21,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21469
+              "duration": 24440
             }
           },
           {
@@ -30,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10752
+              "duration": 52021
             }
           },
           {
@@ -39,52 +61,53 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65711
+              "duration": 86952
             }
           }
         ],
         "steps": [
           {
             "keyword": "Given ",
-            "name": "that I have a valid creation contract",
-            "line": 4,
+            "name": "that I have a valid creation contract whit existing custumer",
+            "line": 19,
             "output": [
-              "orderCode: 60133830\n"
+              "orderCode: 60226951\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:3"
+              "location": "features/step_definitions/steps.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 914397
+              "duration": 1168035310
             }
           },
           {
             "keyword": "When ",
             "name": "I send the requisition",
-            "line": 5,
+            "line": 20,
             "output": [
-              "{\"ownId\"=>\"60133830\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"pedido walmart teste 40\", \"category\"=>\"CLOTHING\", \"quantity\"=>1, \"detail\"=>\"Mais info...\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"60133830\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>8, \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}"
+              "{\"ownId\"=>\"60226951\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>2014}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03sdf66\"}}",
+              "Response => {\"errors\":[{\"code\":\"CUS-001\",\"path\":\"customer.ownIdNotBlank\",\"description\":\"O identificador pr��prio n��o foi informado\"},{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome n��o foi informado\"},{\"code\":\"CUS-005\",\"path\":\"customer.emailNotBlank\",\"description\":\"O e-mail n��o foi informado\"}]}\n\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:7"
+              "location": "features/step_definitions/steps.rb:19"
             },
             "result": {
               "status": "passed",
-              "duration": 143857
+              "duration": 665225297
             }
           },
           {
             "keyword": "Then ",
             "name": "I receive confirmation of the creation",
-            "line": 6,
+            "line": 21,
             "match": {
-              "location": "features/step_definitions/steps.rb:13"
+              "location": "features/step_definitions/steps.rb:29"
             },
             "result": {
               "status": "failed",
-              "error_message": "undefined method `code' for nil:NilClass (NoMethodError)\n./features/classes/http_helper.rb:21:in `handler'\n./features/step_definitions/steps.rb:14:in `/^I receive confirmation of the creation$/'\nfeatures/orders_wirecard.feature:6:in `Then I receive confirmation of the creation'",
-              "duration": 1136177
+              "error_message": "\n• RESPONSE CODE: 400\n                  \n• RESPONSE ERROR MSG: Bad Request\n                  \n• RESPONSE BODY: {\"errors\":[{\"code\":\"CUS-001\",\"path\":\"customer.ownIdNotBlank\",\"description\":\"O identificador próprio não foi informado\"},{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome não foi informado\"},{\"code\":\"CUS-005\",\"path\":\"customer.emailNotBlank\",\"description\":\"O e-mail não foi informado\"}]}\n                  \n• RESPONSE HEADERS: {\"server\"=>[\"nginx\"], \"date\"=>[\"Tue, 11 Jun 2019 04:22:33 GMT\"], \"content-type\"=>[\"application/json\"], \"content-length\"=>[\"314\"], \"connection\"=>[\"close\"], \"x-content-type-options\"=>[\"nosniff\"], \"vary\"=>[\"Accept-Encoding, Origin\"]}\n                  \n• REQUEST BODY: \n                  \n\n\n (RuntimeError)\n./features/classes/http_helper.rb:22:in `handler'\n./features/step_definitions/steps.rb:30:in `/^I receive confirmation of the creation$/'\nfeatures/orders_wirecard.feature:21:in `Then I receive confirmation of the creation'",
+              "duration": 2104580
             }
           }
         ],
@@ -95,272 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21214
-            }
-          }
-        ]
-      },
-      {
-        "id": "creating-a-order;creating-a-valid-order-two-item",
-        "keyword": "Scenario",
-        "name": "Creating a valid order two item",
-        "description": "    Given\n    When\n    And\n    Then",
-        "line": 8,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12076
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7932
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hook.rb:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47505
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7896
-            },
-            "output": [
-              "orderCode: 60133830\n"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "creating-a-order;validate-field-ownid-more-then-45-characters",
-        "keyword": "Scenario",
-        "name": "Validate field ownId more then 45 characters",
-        "description": "    Given\n    When\n    And\n    Then",
-        "line": 14,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9704
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7025
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hook.rb:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36154
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7115
-            },
-            "output": [
-              "orderCode: 60133830\n"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "creating-a-order;validate-field-amount.currency-with-american-currency-code",
-        "keyword": "Scenario",
-        "name": "Validate field amount.currency with american currency code",
-        "description": "    Given\n    When\n    And\n    Then",
-        "line": 20,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10301
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7887
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hook.rb:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 41033
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8409
-            },
-            "output": [
-              "orderCode: 60133830\n"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "creating-a-order;validate-field-amount.currency-with-american-currency-codemore-then-3-characters",
-        "keyword": "Scenario",
-        "name": "Validate field amount.currency with american currency codemore then 3 characters",
-        "description": "    Given\n    When\n    And\n    Then",
-        "line": 26,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9605
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7256
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hook.rb:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38516
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7295
-            },
-            "output": [
-              "orderCode: 60133830\n"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "uri": "features/payment_wirecard.feature",
-    "id": "creating-a-payment",
-    "keyword": "Feature",
-    "name": "Creating a payment",
-    "description": "",
-    "line": 1,
-    "elements": [
-      {
-        "id": "creating-a-payment;creating",
-        "keyword": "Scenario",
-        "name": "Creating",
-        "description": "    Given\n    When\n    And\n    Then",
-        "line": 3,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9508
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7159
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hook.rb:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60046
-            }
-          }
-        ],
-        "after": [
-          {
-            "output": [
-              "orderCode: 60133830\n"
-            ],
-            "match": {
-              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9369
+              "duration": 21698
             }
           }
         ]
