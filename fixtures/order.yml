@@ -9,7 +9,7 @@ oneItem:
   - product: Hercules Double IPA
     category: FOOD,_BEVERAGES_AND_TOBACCO
     quantity: 1
-    detail: Mais info...
+    detail: 'India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.'
     price: 1000
   customer:
     ownId: '12345601'

@@ -20,11 +20,11 @@
     ],
     "elements": [
       {
-        "id": "creating-a-order;creating-a-valid-order-existing-custumer",
+        "id": "creating-a-order;validate-field-product-more-then-250-characters",
         "keyword": "Scenario",
-        "name": "Creating a valid order existing custumer",
+        "name": "Validate field product more then 250 characters",
         "description": "",
-        "line": 18,
+        "line": 42,
         "type": "scenario",
         "tags": [
           {
@@ -32,8 +32,8 @@
             "line": 2
           },
           {
-            "name": "@existing_custumer",
-            "line": 17
+            "name": "@product",
+            "line": 41
           }
         ],
         "before": [
@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24440
+              "duration": 27185
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52021
+              "duration": 30762
             }
           },
           {
@@ -61,53 +61,56 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86952
+              "duration": 74212
             }
           }
         ],
         "steps": [
           {
             "keyword": "Given ",
-            "name": "that I have a valid creation contract whit existing custumer",
-            "line": 19,
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"product\"",
+            "line": 43,
             "output": [
-              "orderCode: 60226951\n"
+              "orderCode: 60267372\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:11"
+              "location": "features/step_definitions/steps.rb:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1168035310
+              "duration": 1084759641
             }
           },
           {
             "keyword": "When ",
             "name": "I send the requisition",
-            "line": 20,
+            "line": 44,
             "output": [
-              "{\"ownId\"=>\"60226951\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>2014}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03sdf66\"}}",
-              "Response => {\"errors\":[{\"code\":\"CUS-001\",\"path\":\"customer.ownIdNotBlank\",\"description\":\"O identificador pr��prio n��o foi informado\"},{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome n��o foi informado\"},{\"code\":\"CUS-005\",\"path\":\"customer.emailNotBlank\",\"description\":\"O e-mail n��o foi informado\"}]}\n\n"
+              "{\"ownId\"=>\"60267372\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Architecto officia ratione est perspiciatis autem illum qui illo quia nemo qui quis nisi recusandae facilis qui vitae ad qui quam dolorem rerum dolorum officiis veniam doloribus est dolor dolor sit ut rerum aspernatur in autem atque aut incidunt non saepe eum distinctio explicabo vitae vero nostrum nihil maiores quis dignissimos sint ut qui placeat nihil sit quia voluptas est tenetur sit et odit architecto et voluptates aliquid consectetur exercitationem libero aut quidem expedita debitis corporis qui et debitis accusantium consequuntur et accusamus magnam tenetur exercitationem doloribus beatae possimus autem sed itaque eligendi quae minus dolorem suscipit omnis ipsum cum cupiditate nesciunt sunt ut quia optio soluta culpa aspernatur iste provident excepturi qui vel dolores iusto voluptatem voluptate mollitia voluptatem quis asperiores enim dolore corrupti adipisci aut eos ex incidunt rem sunt labore est libero voluptas veritatis qui cupiditate quos cumque fuga est voluptatem natus tempore voluptatem ut laudantium et officiis temporibus minima illum harum consequatur rem provident laboriosam impedit et voluptatibus alias quia id nostrum repudiandae molestias esse hic id repellat eum delectus cumque nam molestiae et quasi voluptate perferendis ut expedita earum fugiat error aliquam facilis eaque iste a est repellat ipsam a autem quaerat nulla numquam facere in quo nobis consequuntur optio est magni sunt aut atque nihil neque velit corrupti accusamus placeat dolorem eaque maxime omnis molestiae et sed consequatur eius dolorem quia maxime asperiores eligendi tempora nulla rerum eveniet numquam omnis repellendus soluta at velit enim saepe aut est nobis enim aut ea eveniet officia porro.\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"ORD-012\",\"path\":\"items[0].product\",\"description\":\"O nome do item deve ter no m��ximo 250 caracteres\"}]}\n\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:19"
+              "location": "features/step_definitions/steps.rb:23"
             },
             "result": {
               "status": "passed",
-              "duration": 665225297
+              "duration": 717103899
             }
           },
           {
             "keyword": "Then ",
-            "name": "I receive confirmation of the creation",
-            "line": 21,
+            "name": "I receive message of error bad request",
+            "line": 45,
+            "output": [
+              "Field: items[0].product\n\n",
+              "Description: O nome do item deve ter no máximo 250 caracteres\n\n"
+            ],
             "match": {
-              "location": "features/step_definitions/steps.rb:29"
+              "location": "features/step_definitions/steps.rb:36"
             },
             "result": {
-              "status": "failed",
-              "error_message": "\n• RESPONSE CODE: 400\n                  \n• RESPONSE ERROR MSG: Bad Request\n                  \n• RESPONSE BODY: {\"errors\":[{\"code\":\"CUS-001\",\"path\":\"customer.ownIdNotBlank\",\"description\":\"O identificador próprio não foi informado\"},{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome não foi informado\"},{\"code\":\"CUS-005\",\"path\":\"customer.emailNotBlank\",\"description\":\"O e-mail não foi informado\"}]}\n                  \n• RESPONSE HEADERS: {\"server\"=>[\"nginx\"], \"date\"=>[\"Tue, 11 Jun 2019 04:22:33 GMT\"], \"content-type\"=>[\"application/json\"], \"content-length\"=>[\"314\"], \"connection\"=>[\"close\"], \"x-content-type-options\"=>[\"nosniff\"], \"vary\"=>[\"Accept-Encoding, Origin\"]}\n                  \n• REQUEST BODY: \n                  \n\n\n (RuntimeError)\n./features/classes/http_helper.rb:22:in `handler'\n./features/step_definitions/steps.rb:30:in `/^I receive confirmation of the creation$/'\nfeatures/orders_wirecard.feature:21:in `Then I receive confirmation of the creation'",
-              "duration": 2104580
+              "status": "passed",
+              "duration": 2758861
             }
           }
         ],
@@ -118,7 +121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21698
+              "duration": 33280
             }
           }
         ]

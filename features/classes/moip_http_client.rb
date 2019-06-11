@@ -1,9 +1,15 @@
 # frozen_string_literal: true
+
 # encode: UTF-8
 
 class MoipAPI
   def initialize
     @auth = YAML.load_file('./config/authentication.yml')
+  end
+
+  def generate_code(number)
+    charset = Array('A'..'Z') + Array('1'..'10')
+    Array.new(number) { charset.sample }.join
   end
 
   def generate_order(type = true)
@@ -31,7 +37,7 @@ class MoipAPI
       @order['customer']['ownId'] = $order_code
       @order['customer']['fullname'] = Faker::Name.name
       @order['customer']['email'] = Faker::Internet.email
-      @order['customer']['taxDocument']['number'] = Faker::CPF.numeric
+      @order['customer']['taxDocument']['number'] = Faker::IDNumber
       @order['customer']['phone']['number'] = Faker::Number.number(9)
       @order['customer']['shippingAddress']['street'] = Faker::Address.street_name
       @order['customer']['shippingAddress']['streetNumber'] = Faker::Address.building_number
@@ -42,11 +48,35 @@ class MoipAPI
       @order['items'][1]['product'] = Faker::Beer.name
       @order['items'][1]['detail'] = Faker::Beer.style
       @order['items'][1]['price'] = Faker::Number.positive(1000, 3000)
+    end
+    @order
+  end
 
-  elsif type == true
+  def generate_order_existing_custumer
     @order = YAML.load_file('./fixtures/order.yml')['custumerId']
     @order['ownId'] = $order_code
     @order['items'][0]['price'] = Faker::Number.positive(1000, 3000)
+  end
+
+  def generate_order_invalid(field)
+    @order = YAML.load_file('./fixtures/order.yml')['oneItem']
+    case field
+    when 'ownId'
+      @order['ownId'] = generate_code(46)
+
+    when 'currency'
+      @order['ownId'] = $order_code
+      binding.pry
+      @order['amount']['currency'] = 'USDR'
+
+    when 'idCurrency'
+      @order['ownId'] = $order_code
+      @order['amount']['currency'] = Faker::Currency.unique.code
+
+    when 'product'
+      @order['ownId'] = $order_code
+      @order['items'][0]['product'] = Faker::Lorem.sentence(251)
+
     end
     @order
   end
