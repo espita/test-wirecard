@@ -22,6 +22,7 @@ end
 
 When(/^I send the requisition$/) do
   puts @order
+  binding.pry
   @response = HttpHelper.new.post('v2/orders', @order)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
   puts "Response => #{temp}\n\n"

@@ -15,6 +15,6 @@ gem 'minitest'
 gem 'xpath'
 gem 'gherkin'
 gem 'json-minify'
-gem 'faker'
+gem 'faker', '1.9.2'  
 gem 'cpf_faker'
 gem "rubocop"
