@@ -52,8 +52,8 @@ class MoipAPI
     @order
   end
 
-  def generate_order_existing_custumer
-    @order = YAML.load_file('./fixtures/order.yml')['custumerId']
+  def generate_order_existing_customer
+    @order = YAML.load_file('./fixtures/order.yml')['customerId']
     @order['ownId'] = $order_code
     @order['items'][0]['price'] = Faker::Number.positive(1000, 3000)
   end
@@ -77,7 +77,22 @@ class MoipAPI
       @order['ownId'] = $order_code
       @order['items'][0]['product'] = Faker::Lorem.sentence(251)
 
+    when 'customer'
+      @order['ownId'] = $order_code
+      @order['customer']['fullname'] = ''
+
+    when 'customerId'
+      @order = YAML.load_file('./fixtures/order.yml')['customerId']
+      @order['ownId'] = $order_code
+      @order['customer']['id'] = 'CUS-DF83DIPABEER'
+
     end
     @order
+  end
+
+  def generate_payment
+    @payment = YAML.load_file('./fixtures/payment.yml')
+    @payment['fundingInstrument']['creditCard']['holder']['fullname'] = Faker::Name.name
+    @payment['fundingInstrument']['creditCard']['holder']['taxDocument']['number'] = Faker::IDNumber
   end
 end

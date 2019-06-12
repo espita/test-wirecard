@@ -1,0 +1,29 @@
+---
+installmentCount: 1
+statementDescriptor: pitasbeer.com
+fundingInstrument:
+  method: CREDIT_CARD
+  creditCard:
+    expirationMonth: '12'
+    expirationYear: '22'
+    number: '5555666677778884'
+    cvc: '123'
+    store: true
+    holder:
+      fullname: Jose Portador da Silva
+      birthdate: '1988-12-30'
+      taxDocument:
+        type: CPF
+        number: '33333333333'
+      phone:
+        countryCode: '55'
+        areaCode: '11'
+        number: '967788997'
+device:
+  ip: 127.0.0.1
+  geolocation:
+    latitude: -33.867
+    longitude: 151.206
+  userAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/58.0.3029.81 Safari/537.36
+  fingerprint: QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp

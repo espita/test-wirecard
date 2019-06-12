@@ -70,7 +70,7 @@ twoItem:
       state: SP
       country: BRA
       zipCode: '01234000'
-custumerId:
+customerId:
   ownId: '2017112762'
   amount:
     currency: BRL

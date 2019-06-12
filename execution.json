@@ -1,14 +1,14 @@
 [
   {
-    "uri": "features/orders_wirecard.feature",
-    "id": "creating-a-order",
+    "uri": "features/payment_wirecard.feature",
+    "id": "creating-a-payment",
     "keyword": "Feature",
-    "name": "Creating a order",
+    "name": "Creating a payment",
     "description": "",
     "line": 4,
     "tags": [
       {
-        "name": "@create_order",
+        "name": "@create_payment",
         "line": 2
       }
     ],
@@ -20,20 +20,16 @@
     ],
     "elements": [
       {
-        "id": "creating-a-order;validate-field-product-more-then-250-characters",
+        "id": "creating-a-payment;creating-order-with-valid-payment",
         "keyword": "Scenario",
-        "name": "Validate field product more then 250 characters",
+        "name": "Creating order with valid payment",
         "description": "",
-        "line": 42,
+        "line": 6,
         "type": "scenario",
         "tags": [
           {
-            "name": "@create_order",
+            "name": "@create_payment",
             "line": 2
-          },
-          {
-            "name": "@product",
-            "line": 41
           }
         ],
         "before": [
@@ -43,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27185
+              "duration": 75553
             }
           },
           {
@@ -52,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30762
+              "duration": 29883
             }
           },
           {
@@ -61,56 +57,106 @@
             },
             "result": {
               "status": "passed",
-              "duration": 74212
+              "duration": 108127
             }
           }
         ],
         "steps": [
           {
             "keyword": "Given ",
-            "name": "that I have a invalid creation contract whit fields maximum character limit \"product\"",
-            "line": 43,
+            "name": "that I have a valid creation contract",
+            "line": 7,
             "output": [
-              "orderCode: 60267372\n"
+              "orderCode: 60301086\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:15"
+              "location": "features/step_definitions/steps.rb:3"
             },
             "result": {
               "status": "passed",
-              "duration": 1084759641
+              "duration": 1047212461
             }
           },
           {
             "keyword": "When ",
             "name": "I send the requisition",
-            "line": 44,
+            "line": 8,
             "output": [
-              "{\"ownId\"=>\"60267372\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Architecto officia ratione est perspiciatis autem illum qui illo quia nemo qui quis nisi recusandae facilis qui vitae ad qui quam dolorem rerum dolorum officiis veniam doloribus est dolor dolor sit ut rerum aspernatur in autem atque aut incidunt non saepe eum distinctio explicabo vitae vero nostrum nihil maiores quis dignissimos sint ut qui placeat nihil sit quia voluptas est tenetur sit et odit architecto et voluptates aliquid consectetur exercitationem libero aut quidem expedita debitis corporis qui et debitis accusantium consequuntur et accusamus magnam tenetur exercitationem doloribus beatae possimus autem sed itaque eligendi quae minus dolorem suscipit omnis ipsum cum cupiditate nesciunt sunt ut quia optio soluta culpa aspernatur iste provident excepturi qui vel dolores iusto voluptatem voluptate mollitia voluptatem quis asperiores enim dolore corrupti adipisci aut eos ex incidunt rem sunt labore est libero voluptas veritatis qui cupiditate quos cumque fuga est voluptatem natus tempore voluptatem ut laudantium et officiis temporibus minima illum harum consequatur rem provident laboriosam impedit et voluptatibus alias quia id nostrum repudiandae molestias esse hic id repellat eum delectus cumque nam molestiae et quasi voluptate perferendis ut expedita earum fugiat error aliquam facilis eaque iste a est repellat ipsam a autem quaerat nulla numquam facere in quo nobis consequuntur optio est magni sunt aut atque nihil neque velit corrupti accusamus placeat dolorem eaque maxime omnis molestiae et sed consequatur eius dolorem quia maxime asperiores eligendi tempora nulla rerum eveniet numquam omnis repellendus soluta at velit enim saepe aut est nobis enim aut ea eveniet officia porro.\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
-              "Response => {\"errors\":[{\"code\":\"ORD-012\",\"path\":\"items[0].product\",\"description\":\"O nome do item deve ter no m��ximo 250 caracteres\"}]}\n\n"
+              "{\"ownId\"=>\"60301086\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"La Fin Du Monde\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Sour Ale\", \"price\"=>1947}], \"customer\"=>{\"ownId\"=>\"60301086\", \"fullname\"=>\"Russel Berge\", \"email\"=>\"pierremayer@swift.name\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"49526457382\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"613647987\"}, \"shippingAddress\"=>{\"street\"=>\"Carrol Spring\", \"streetNumber\"=>\"81589\", \"complement\"=>\"Casa\", \"district\"=>\"Paulista\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-J3JE74KONVP4\",\"ownId\":\"60301086\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-11T21:58:08.072-03\",\"updatedAt\":\"2019-06-11T21:58:08.072-03\",\"amount\":{\"paid\":0,\"total\":2947,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1947}},\"items\":[{\"product\":\"La Fin Du Monde\",\"price\":1947,\"detail\":\"Sour Ale\",\"quantity\":1,\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-71KTRT1PRGW0\",\"ownId\":\"60301086\",\"fullname\":\"Russel Berge\",\"createdAt\":\"2019-06-11T21:58:08.073-03\",\"updatedAt\":\"2019-06-11T21:58:08.076-03\",\"birthDate\":\"1988-12-30\",\"email\":\"pierremayer@swift.name\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"13647987\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"49526457382\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Carrol Spring\",\"streetNumber\":\"81589\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Paulista\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-71KTRT1PRGW0\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=8769344e-f7ac-4d93-a5b6-c3ab090b1bdb&id=CUS-71KTRT1PRGW0&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-11T21:58:08.072-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2947,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Carrol Spring\",\"streetNumber\":\"81589\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Paulista\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-J3JE74KONVP4\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=4319e1c5-fa2e-4186-accc-7839f8bdd87c&id=ORD-J3JE74KONVP4\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=4319e1c5-fa2e-4186-accc-7839f8bdd87c&id=ORD-J3JE74KONVP4&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=4319e1c5-fa2e-4186-accc-7839f8bdd87c&id=ORD-J3JE74KONVP4&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-J3JE74KONVP4\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:23"
             },
             "result": {
               "status": "passed",
-              "duration": 717103899
+              "duration": 907024930
             }
           },
           {
             "keyword": "Then ",
-            "name": "I receive message of error bad request",
-            "line": 45,
+            "name": "I receive confirmation of the creation",
+            "line": 9,
             "output": [
-              "Field: items[0].product\n\n",
-              "Description: O nome do item deve ter no máximo 250 caracteres\n\n"
+              "Id Wirecard: ORD-J3JE74KONVP4\n\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:36"
+              "location": "features/step_definitions/steps.rb:30"
             },
             "result": {
               "status": "passed",
-              "duration": 2758861
+              "duration": 2504493
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I send the requisition to create a payment",
+            "line": 10,
+            "output": [
+              "Faker::IDNumber",
+              "Response => {\"errors\":[{\"code\":\"API-1\",\"description\":\"Estrutura de JSON inv��lida (Expected BEGIN_OBJECT but was STRING at line 1 column 2)\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647491171
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/steps.rb:30"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "\n• RESPONSE CODE: 400\n                  \n• RESPONSE ERROR MSG: Bad Request\n                  \n• RESPONSE BODY: {\"errors\":[{\"code\":\"API-1\",\"description\":\"Estrutura de JSON inválida (Expected BEGIN_OBJECT but was STRING at line 1 column 2)\"}]}\n                  \n• RESPONSE HEADERS: {\"server\"=>[\"nginx\"], \"date\"=>[\"Wed, 12 Jun 2019 00:58:08 GMT\"], \"content-type\"=>[\"application/json\"], \"content-length\"=>[\"131\"], \"connection\"=>[\"close\"], \"x-content-type-options\"=>[\"nosniff\"], \"vary\"=>[\"Accept-Encoding, Origin\"]}\n                  \n• REQUEST BODY: \n                  \n\n\n (RuntimeError)\n./features/classes/http_helper.rb:22:in `handler'\n./features/step_definitions/steps.rb:31:in `/^I receive confirmation of the creation$/'\nfeatures/payment_wirecard.feature:11:in `Then I receive confirmation of the creation'",
+              "duration": 5297911
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I access my wirecard account",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/steps.rb:53"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the payment status of order must be pago",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/steps.rb:57"
+            },
+            "result": {
+              "status": "skipped"
             }
           }
         ],
@@ -121,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33280
+              "duration": 24699
             }
           }
         ]
