@@ -2,7 +2,8 @@
 * * *
 
 #### Information
-This is the automated test project for Kerberus-api project. Designed using Ruby as language and Cubumber as BDD framework, it intends to work as a side project.
+This is the automated test project for Wirecard (order and payment API). Designed using Ruby as language and Cubumber as BDD framework.
+
 
 #### Requirement
 * Ruby version 2.6 and upper
