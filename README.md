@@ -5,8 +5,8 @@
 This is the automated test project for Kerberus-api project. Designed using Ruby as language and Cubumber as BDD framework, it intends to work as a side project.
 
 #### Requirement
-Ruby version 2.6 and upper
-Chrome-driver
+* Ruby version 2.6 and upper
+* Chrome-driver
 
 ----
 #### Installation
