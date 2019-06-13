@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# encoding: utf-8
+
 class HttpHelper
   def initialize
     @auth = YAML.load_file('./config/authentication.yml')
@@ -7,7 +7,7 @@ class HttpHelper
   end
 
   def post(path, contract)
-    json = contract.to_json 
+    json = contract.to_json
     HTTParty.post("#{$wirecard_url[$env]}/#{path}",
                   body: json,
                   headers: { 'Content-Type' => 'application/json', 'Content-Encoding' => 'UTF-8', 'charset' => 'utf-8' },
@@ -19,11 +19,11 @@ class HttpHelper
 
   def get(path)
     HTTParty.get("#{$wirecard_url[$env]}/#{path}",
-                  headers: { 'Content-Type' => 'application/json', 'Content-Encoding' => 'UTF-8', 'charset' => 'utf-8' },
-                  basic_auth: {
-                    username: @auth['wirecard']['usr'],
-                    password: @auth['wirecard']['pass']
-                  })
+                 headers: { 'Content-Type' => 'application/json', 'Content-Encoding' => 'UTF-8', 'charset' => 'utf-8' },
+                 basic_auth: {
+                   username: @auth['wirecard']['usr'],
+                   password: @auth['wirecard']['pass']
+                 })
   end
 
   def handler(response, http_code)
@@ -37,4 +37,3 @@ class HttpHelper
     end
   end
 end
-

@@ -23,7 +23,7 @@ class Login
       page.find('.close').click
 
     else
-      puts
+      puts "Modal not present"
     end
   end
 end

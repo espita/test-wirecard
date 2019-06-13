@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21350
+              "duration": 20408
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25934
+              "duration": 27451
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71587
+              "duration": 68955
             }
           }
         ],
@@ -71,14 +71,14 @@
             "name": "that I have a valid creation contract",
             "line": 8,
             "output": [
-              "orderCode: 60400316\n"
+              "orderCode: 60427357\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:3"
             },
             "result": {
               "status": "passed",
-              "duration": 1052977650
+              "duration": 1056246184
             }
           },
           {
@@ -86,15 +86,15 @@
             "name": "I send the requisition",
             "line": 9,
             "output": [
-              "{\"ownId\"=>\"60400316\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Arrogant Bastard Ale\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Lager\", \"price\"=>1978}], \"customer\"=>{\"ownId\"=>\"60400316\", \"fullname\"=>\"Hollie Hettinger\", \"email\"=>\"eunicehayes@toy.biz\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"96097130767\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"295943875\"}, \"shippingAddress\"=>{\"street\"=>\"Lyle Skyway\", \"streetNumber\"=>\"3029\", \"complement\"=>\"Casa\", \"district\"=>\"Santana\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
-              "Response => {\"id\":\"ORD-I5KGOYAQO0HG\",\"ownId\":\"60400316\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:57.847-03\",\"updatedAt\":\"2019-06-13T01:31:57.847-03\",\"amount\":{\"paid\":0,\"total\":2978,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1978}},\"items\":[{\"price\":1978,\"detail\":\"Light Lager\",\"quantity\":1,\"product\":\"Arrogant Bastard Ale\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-AR6VZA4WMRQL\",\"ownId\":\"60400316\",\"fullname\":\"Hollie Hettinger\",\"createdAt\":\"2019-06-13T01:31:57.849-03\",\"updatedAt\":\"2019-06-13T01:31:57.852-03\",\"birthDate\":\"1988-12-30\",\"email\":\"eunicehayes@toy.biz\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"95943875\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"96097130767\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Lyle Skyway\",\"streetNumber\":\"3029\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-AR6VZA4WMRQL\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=ba2f0b14-d402-4e70-88cd-bb780997f37d&id=CUS-AR6VZA4WMRQL&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:57.847-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2978,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Lyle Skyway\",\"streetNumber\":\"3029\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-I5KGOYAQO0HG\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-I5KGOYAQO0HG\"}}}}\n\n"
+              "{\"ownId\"=>\"60427357\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Péché Mortel\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Strong Ale\", \"price\"=>2328}], \"customer\"=>{\"ownId\"=>\"60427357\", \"fullname\"=>\"Bethany Breitenberg\", \"email\"=>\"senakemmer@emard.co\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"50262168545\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"396349310\"}, \"shippingAddress\"=>{\"street\"=>\"Richard Parkway\", \"streetNumber\"=>\"45941\", \"complement\"=>\"Casa\", \"district\"=>\"Moema\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-G7G7EG9Y432A\",\"ownId\":\"60427357\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T09:02:38.984-03\",\"updatedAt\":\"2019-06-13T09:02:38.984-03\",\"amount\":{\"paid\":0,\"total\":3328,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":2328}},\"items\":[{\"price\":2328,\"detail\":\"Strong Ale\",\"quantity\":1,\"product\":\"P��ch�� Mortel\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-RCB42INJUK02\",\"ownId\":\"60427357\",\"fullname\":\"Bethany Breitenberg\",\"createdAt\":\"2019-06-13T09:02:38.986-03\",\"updatedAt\":\"2019-06-13T09:02:38.989-03\",\"birthDate\":\"1988-12-30\",\"email\":\"senakemmer@emard.co\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"96349310\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"50262168545\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Richard Parkway\",\"streetNumber\":\"45941\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-RCB42INJUK02\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=aa9791ec-c9aa-403c-9cac-db3acfa0a039&id=CUS-RCB42INJUK02&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T09:02:38.984-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":3328,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Richard Parkway\",\"streetNumber\":\"45941\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-G7G7EG9Y432A\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e5f60180-add5-4494-aaac-77abdd2c5567&id=ORD-G7G7EG9Y432A\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e5f60180-add5-4494-aaac-77abdd2c5567&id=ORD-G7G7EG9Y432A&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e5f60180-add5-4494-aaac-77abdd2c5567&id=ORD-G7G7EG9Y432A&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-G7G7EG9Y432A\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 745187663
+              "duration": 832967662
             }
           },
           {
@@ -102,14 +102,14 @@
             "name": "I receive confirmation of the creation",
             "line": 10,
             "output": [
-              "Id Wirecard: ORD-I5KGOYAQO0HG\n\n"
+              "Id Wirecard: ORD-G7G7EG9Y432A\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5033655
+              "duration": 5084440
             }
           }
         ],
@@ -120,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78293
+              "duration": 51888
             }
           }
         ]
@@ -149,7 +149,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15825
+              "duration": 13861
             }
           },
           {
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25469
+              "duration": 22524
             }
           },
           {
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53848
+              "duration": 49188
             }
           }
         ],
@@ -177,14 +177,14 @@
             "name": "that I have a valid creation contract whit two item",
             "line": 14,
             "output": [
-              "orderCode: 60400317\n"
+              "orderCode: 60427359\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:7"
             },
             "result": {
               "status": "passed",
-              "duration": 6944016
+              "duration": 7925217
             }
           },
           {
@@ -192,15 +192,15 @@
             "name": "I send the requisition",
             "line": 15,
             "output": [
-              "{\"ownId\"=>\"60400317\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Dreadnaught IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Fruit Beer\", \"price\"=>2062}, {\"product\"=>\"Weihenstephaner Hefeweissbier\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Lager\", \"price\"=>2692}], \"customer\"=>{\"ownId\"=>\"60400317\", \"fullname\"=>\"Nicol Hayes\", \"email\"=>\"kendallschuster@walker.net\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"14079909420\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"339354651\"}, \"shippingAddress\"=>{\"street\"=>\"Helga Rest\", \"streetNumber\"=>\"350\", \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
-              "Response => {\"id\":\"ORD-VPSVKUAX2HK8\",\"ownId\":\"60400317\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:58.599-03\",\"updatedAt\":\"2019-06-13T01:31:58.599-03\",\"amount\":{\"paid\":0,\"total\":5754,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":4754}},\"items\":[{\"price\":2062,\"detail\":\"Fruit Beer\",\"quantity\":1,\"product\":\"Dreadnaught IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"},{\"price\":2692,\"detail\":\"Light Lager\",\"quantity\":1,\"product\":\"Weihenstephaner Hefeweissbier\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-FFA6GN42QCQF\",\"ownId\":\"60400317\",\"fullname\":\"Nicol Hayes\",\"createdAt\":\"2019-06-13T01:31:58.601-03\",\"updatedAt\":\"2019-06-13T01:31:58.604-03\",\"birthDate\":\"1988-12-30\",\"email\":\"kendallschuster@walker.net\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"39354651\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"14079909420\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Helga Rest\",\"streetNumber\":\"350\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-FFA6GN42QCQF\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=9fbf02cb-8da7-4f28-890d-cef08a467521&id=CUS-FFA6GN42QCQF&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:58.599-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":5754,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Helga Rest\",\"streetNumber\":\"350\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-VPSVKUAX2HK8\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-VPSVKUAX2HK8\"}}}}\n\n"
+              "{\"ownId\"=>\"60427359\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Stone IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Amber Hybrid Beer\", \"price\"=>1727}, {\"product\"=>\"Yeti Imperial Stout\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Wood-aged Beer\", \"price\"=>2251}], \"customer\"=>{\"ownId\"=>\"60427359\", \"fullname\"=>\"Merideth Schuppe\", \"email\"=>\"diana@langtowne.org\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"45919686260\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"454701701\"}, \"shippingAddress\"=>{\"street\"=>\"Jast Way\", \"streetNumber\"=>\"558\", \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-Y0K1O13O9YHH\",\"ownId\":\"60427359\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T09:02:39.754-03\",\"updatedAt\":\"2019-06-13T09:02:39.754-03\",\"amount\":{\"paid\":0,\"total\":4978,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":3978}},\"items\":[{\"price\":1727,\"detail\":\"Amber Hybrid Beer\",\"quantity\":1,\"product\":\"Stone IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"},{\"price\":2251,\"detail\":\"Wood-aged Beer\",\"quantity\":1,\"product\":\"Yeti Imperial Stout\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-7W8TUK6TWGBN\",\"ownId\":\"60427359\",\"fullname\":\"Merideth Schuppe\",\"createdAt\":\"2019-06-13T09:02:39.756-03\",\"updatedAt\":\"2019-06-13T09:02:39.758-03\",\"birthDate\":\"1988-12-30\",\"email\":\"diana@langtowne.org\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"54701701\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"45919686260\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Jast Way\",\"streetNumber\":\"558\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-7W8TUK6TWGBN\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=3d6cf61e-0403-43c4-86b7-82bb95d0b105&id=CUS-7W8TUK6TWGBN&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T09:02:39.754-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":4978,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Jast Way\",\"streetNumber\":\"558\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-Y0K1O13O9YHH\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e2e58997-2870-41bf-9019-5042cf176d41&id=ORD-Y0K1O13O9YHH\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e2e58997-2870-41bf-9019-5042cf176d41&id=ORD-Y0K1O13O9YHH&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e2e58997-2870-41bf-9019-5042cf176d41&id=ORD-Y0K1O13O9YHH&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-Y0K1O13O9YHH\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 756295893
+              "duration": 745072730
             }
           },
           {
@@ -208,14 +208,14 @@
             "name": "I receive confirmation of the creation",
             "line": 16,
             "output": [
-              "Id Wirecard: ORD-VPSVKUAX2HK8\n\n"
+              "Id Wirecard: ORD-Y0K1O13O9YHH\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5019008
+              "duration": 3362000
             }
           }
         ],
@@ -226,7 +226,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38844
+              "duration": 17589
             }
           }
         ]
@@ -255,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48696
+              "duration": 14926
             }
           },
           {
@@ -264,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 98169
+              "duration": 25186
             }
           },
           {
@@ -273,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 239115
+              "duration": 53330
             }
           }
         ],
@@ -283,15 +283,15 @@
             "name": "that I have a valid creation contract whit existing customer",
             "line": 20,
             "output": [
-              "orderCode: 60400318\n",
-              "{\"ownId\"=>\"60400318\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1173}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}"
+              "orderCode: 60427359\n",
+              "{\"ownId\"=>\"60427359\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1720}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 7046479
+              "duration": 2046989
             }
           },
           {
@@ -299,15 +299,15 @@
             "name": "I send the requisition",
             "line": 21,
             "output": [
-              "{\"ownId\"=>\"60400318\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1173}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}",
-              "Response => {\"id\":\"ORD-33MWCJ97939O\",\"ownId\":\"60400318\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:59.374-03\",\"updatedAt\":\"2019-06-13T01:31:59.374-03\",\"amount\":{\"paid\":0,\"total\":2673,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1500,\"addition\":0,\"discount\":0,\"items\":1173}},\"items\":[{\"price\":1173,\"detail\":\"India Pale Ale Cervejas IPA e o seu cl��ssico amargor.\",\"quantity\":1,\"product\":\"Hercules Double IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"customer\":{\"id\":\"CUS-DF83DERLXE03\",\"ownId\":\"12345601\",\"fullname\":\"Jose Silva\",\"createdAt\":\"2019-06-10T18:11:10.000-03\",\"updatedAt\":\"2019-06-13T01:31:59.382-03\",\"birthDate\":\"1988-12-30\",\"email\":\"nome@email.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"},\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"66778899\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"22222222222\"},\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"complement\":\"8\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"moipAccount\":{\"id\":\"MPA-PQ0H8UZYNNWY\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-DF83DERLXE03\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=d6d4e356-3b87-4716-a025-1e162b14146e&id=CUS-DF83DERLXE03&mpa=MPA-7026D0894395\"}},\"fundingInstruments\":[{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"}]},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:59.374-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2673,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-33MWCJ97939O\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-33MWCJ97939O\"}}}}\n\n"
+              "{\"ownId\"=>\"60427359\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1720}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}",
+              "Response => {\"id\":\"ORD-PB06KDCQ8SFU\",\"ownId\":\"60427359\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T09:02:40.477-03\",\"updatedAt\":\"2019-06-13T09:02:40.477-03\",\"amount\":{\"paid\":0,\"total\":3220,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1500,\"addition\":0,\"discount\":0,\"items\":1720}},\"items\":[{\"price\":1720,\"detail\":\"India Pale Ale Cervejas IPA e o seu cl��ssico amargor.\",\"quantity\":1,\"product\":\"Hercules Double IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"customer\":{\"id\":\"CUS-DF83DERLXE03\",\"ownId\":\"12345601\",\"fullname\":\"Jose Silva\",\"createdAt\":\"2019-06-10T18:11:10.000-03\",\"updatedAt\":\"2019-06-13T09:02:40.482-03\",\"birthDate\":\"1988-12-30\",\"email\":\"nome@email.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"},\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"66778899\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"22222222222\"},\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"complement\":\"8\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"moipAccount\":{\"id\":\"MPA-PQ0H8UZYNNWY\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-DF83DERLXE03\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=d6d4e356-3b87-4716-a025-1e162b14146e&id=CUS-DF83DERLXE03&mpa=MPA-7026D0894395\"}},\"fundingInstruments\":[{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"}]},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T09:02:40.477-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":3220,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-PB06KDCQ8SFU\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e54e2da5-458d-4ea7-a175-831ef0c4e0b1&id=ORD-PB06KDCQ8SFU\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e54e2da5-458d-4ea7-a175-831ef0c4e0b1&id=ORD-PB06KDCQ8SFU&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e54e2da5-458d-4ea7-a175-831ef0c4e0b1&id=ORD-PB06KDCQ8SFU&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-PB06KDCQ8SFU\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 771551553
+              "duration": 728749337
             }
           },
           {
@@ -315,14 +315,14 @@
             "name": "I receive confirmation of the creation",
             "line": 22,
             "output": [
-              "Id Wirecard: ORD-33MWCJ97939O\n\n"
+              "Id Wirecard: ORD-PB06KDCQ8SFU\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5108335
+              "duration": 5124211
             }
           }
         ],
@@ -333,7 +333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41178
+              "duration": 16340
             }
           }
         ]
@@ -362,7 +362,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13834
+              "duration": 13642
             }
           },
           {
@@ -371,7 +371,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21456
+              "duration": 21581
             }
           },
           {
@@ -380,7 +380,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57055
+              "duration": 46421
             }
           }
         ],
@@ -390,14 +390,14 @@
             "name": "that I have a invalid creation contract whit fields maximum character limit \"ownId\"",
             "line": 26,
             "output": [
-              "orderCode: 60400319\n"
+              "orderCode: 60427360\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1766893
+              "duration": 1456312
             }
           },
           {
@@ -405,7 +405,7 @@
             "name": "I send the requisition",
             "line": 27,
             "output": [
-              "{\"ownId\"=>\"5FAPNJSLCBALB2MDEEDBH74QYP6UYDOT69OQYJX3810X10K8\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "{\"ownId\"=>\"TSH3UITI76PPZ2VW79FNZQEQJL83F10KVPKLK8JYOUVIL4O\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
               "Response => {\"errors\":[{\"code\":\"ORD-002\",\"path\":\"ownId\",\"description\":\"O identificador pr��prio de pedido deve ter no m��ximo 45 caracteres\"}]}\n\n"
             ],
             "match": {
@@ -413,7 +413,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 654925154
+              "duration": 689881043
             }
           },
           {
@@ -429,7 +429,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5024931
+              "duration": 4990732
             }
           }
         ],
@@ -440,7 +440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40056
+              "duration": 38778
             }
           }
         ]
@@ -469,7 +469,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36608
+              "duration": 35836
             }
           },
           {
@@ -478,7 +478,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22449
+              "duration": 59645
             }
           },
           {
@@ -487,7 +487,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55215
+              "duration": 138410
             }
           }
         ],
@@ -497,14 +497,14 @@
             "name": "that I have a invalid creation contract whit field different currency \"idCurrency\"",
             "line": 32,
             "output": [
-              "orderCode: 60400320\n"
+              "orderCode: 60427361\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:20"
             },
             "result": {
               "status": "passed",
-              "duration": 2747226
+              "duration": 2703964
             }
           },
           {
@@ -512,7 +512,7 @@
             "name": "I send the requisition",
             "line": 33,
             "output": [
-              "{\"ownId\"=>\"60400320\", \"amount\"=>{\"currency\"=>\"VEF\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "{\"ownId\"=>\"60427361\", \"amount\"=>{\"currency\"=>\"GIP\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
               "Response => {\"errors\":[{\"code\":\"-\",\"path\":\"amount.currency\",\"description\":\"Valor inv��lido para o campo, consulte a documenta����o\"}]}\n\n"
             ],
             "match": {
@@ -520,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 634315846
+              "duration": 644330038
             }
           },
           {
@@ -536,7 +536,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4807305
+              "duration": 5047376
             }
           }
         ],
@@ -547,7 +547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40843
+              "duration": 38017
             }
           }
         ]
@@ -576,7 +576,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24309
+              "duration": 17935
             }
           },
           {
@@ -585,7 +585,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34134
+              "duration": 30047
             }
           },
           {
@@ -594,7 +594,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 112404
+              "duration": 81624
             }
           }
         ],
@@ -604,14 +604,14 @@
             "name": "that I have a invalid creation contract whit fields maximum character limit \"currency\"",
             "line": 38,
             "output": [
-              "orderCode: 60400320\n"
+              "orderCode: 60427362\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1852890
+              "duration": 1791848
             }
           },
           {
@@ -619,7 +619,7 @@
             "name": "I send the requisition",
             "line": 39,
             "output": [
-              "{\"ownId\"=>\"60400320\", \"amount\"=>{\"currency\"=>\"USDR\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "{\"ownId\"=>\"60427362\", \"amount\"=>{\"currency\"=>\"USDR\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
               "Response => {\"errors\":[{\"code\":\"-\",\"path\":\"amount.currency\",\"description\":\"Valor inv��lido para o campo, consulte a documenta����o\"}]}\n\n"
             ],
             "match": {
@@ -627,7 +627,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 647909950
+              "duration": 637888367
             }
           },
           {
@@ -643,7 +643,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4838752
+              "duration": 4804864
             }
           }
         ],
@@ -654,7 +654,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39019
+              "duration": 38453
             }
           }
         ]
@@ -683,7 +683,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18191
+              "duration": 13755
             }
           },
           {
@@ -692,7 +692,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30802
+              "duration": 19575
             }
           },
           {
@@ -701,7 +701,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 79550
+              "duration": 46187
             }
           }
         ],
@@ -711,14 +711,14 @@
             "name": "that I have a invalid creation contract whit fields maximum character limit \"product\"",
             "line": 44,
             "output": [
-              "orderCode: 60400321\n"
+              "orderCode: 60427362\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 2080307
+              "duration": 2697479
             }
           },
           {
@@ -726,7 +726,7 @@
             "name": "I send the requisition",
             "line": 45,
             "output": [
-              "{\"ownId\"=>\"60400321\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Eos omnis molestias et neque excepturi laudantium sit facere non quibusdam corrupti iste facilis necessitatibus sequi quas in ad quia id sequi occaecati tempora illo voluptatem rerum et sed dolorum porro necessitatibus fugiat ea alias et eveniet iure asperiores commodi et fugiat autem velit quia ea laboriosam deleniti quo eius eligendi voluptate nihil ut cupiditate et qui reprehenderit amet totam vitae omnis consequatur incidunt harum debitis id omnis voluptas placeat tempore voluptatem maxime quia sit officiis sed tempore facilis repellendus est autem natus illum corporis ut nulla excepturi non nemo ut aliquid et expedita qui atque veniam quod deserunt eaque nesciunt harum suscipit et ipsa hic qui nemo dolore animi perferendis voluptatem quaerat earum numquam optio quis explicabo laudantium in non debitis veritatis similique dolorem non tenetur labore quasi voluptatum in mollitia dolor recusandae voluptatibus voluptatem est explicabo odio laborum aut ea molestiae eaque animi fugit fugit aspernatur dignissimos esse nihil consectetur rem molestiae sit officiis reiciendis quasi provident at magni maiores enim doloribus molestiae possimus recusandae ab est odit ut perspiciatis dolorem natus officia dolores sit aut enim nam accusantium et eos delectus incidunt assumenda veritatis illo atque quae distinctio ducimus omnis iusto eum blanditiis velit id vitae fuga libero unde qui quis nam qui soluta culpa laborum repudiandae optio ipsam quidem voluptatem nostrum deleniti minus eius qui esse neque repellendus sunt similique quia possimus et ut adipisci ex autem hic aliquam molestiae quo et a et quibusdam doloremque quisquam occaecati est modi quae vel ad libero voluptates dolorem et.\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "{\"ownId\"=>\"60427362\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Quidem qui consequuntur porro debitis aliquam placeat neque esse voluptas consequatur vel tempore sed possimus animi provident voluptas officiis aut in nostrum ipsum dolores aut aut est est reiciendis dolorem exercitationem accusamus et et non voluptate ut beatae esse voluptas inventore harum aut id dolores doloribus molestiae voluptatem blanditiis sapiente laudantium sed ut doloremque voluptas aut autem blanditiis fuga quasi aliquid numquam maxime aliquam excepturi illo aut ex maiores veniam tempora veritatis ad eius maiores incidunt impedit id nihil et enim dolores dolorum eos ut sed deserunt error iusto accusantium beatae tenetur recusandae vero architecto debitis nisi laborum ut et accusamus dolore culpa ratione quia voluptas nulla ut dolor ipsum magni labore nesciunt recusandae mollitia saepe eius corrupti velit qui dignissimos inventore ducimus voluptatem dolor hic consectetur aliquid non voluptatibus non minima harum deleniti earum voluptatem voluptatibus enim molestiae consequuntur sunt suscipit omnis et est voluptas rerum sequi aut quis qui in et ex nemo ea enim dolorem ab qui incidunt voluptatum autem consequatur perspiciatis et aut excepturi rem nihil unde numquam nulla ea aspernatur aut deserunt repudiandae rerum adipisci tempore pariatur sunt amet dolorem et repellendus distinctio quia reprehenderit sit temporibus corrupti itaque eveniet laudantium aspernatur quis expedita commodi sapiente maxime quo at dolor qui non nobis repellendus dicta sequi molestias optio voluptates ipsa provident quae autem fugit et quod eos corporis unde aperiam qui ut delectus distinctio corporis sint voluptatem molestiae rerum ipsam quam rerum in praesentium nemo quia libero commodi rerum et et quia officia culpa quis placeat.\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
               "Response => {\"errors\":[{\"code\":\"ORD-012\",\"path\":\"items[0].product\",\"description\":\"O nome do item deve ter no m��ximo 250 caracteres\"}]}\n\n"
             ],
             "match": {
@@ -734,7 +734,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 661684671
+              "duration": 655725458
             }
           },
           {
@@ -750,7 +750,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3842521
+              "duration": 4548721
             }
           }
         ],
@@ -761,7 +761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17590
+              "duration": 34952
             }
           }
         ]
@@ -790,7 +790,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16488
+              "duration": 31668
             }
           },
           {
@@ -799,7 +799,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23575
+              "duration": 53429
             }
           },
           {
@@ -808,7 +808,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52163
+              "duration": 113441
             }
           }
         ],
@@ -818,14 +818,14 @@
             "name": "that I have a invalid creation contract whit fields maximum character limit \"customer\"",
             "line": 50,
             "output": [
-              "orderCode: 60400322\n"
+              "orderCode: 60427363\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1492038
+              "duration": 3507793
             }
           },
           {
@@ -833,7 +833,7 @@
             "name": "I send the requisition",
             "line": 51,
             "output": [
-              "{\"ownId\"=>\"60400322\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "{\"ownId\"=>\"60427363\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
               "Response => {\"errors\":[{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome n��o foi informado\"}]}\n\n"
             ],
             "match": {
@@ -841,7 +841,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 660914490
+              "duration": 654215305
             }
           },
           {
@@ -857,7 +857,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5230814
+              "duration": 4916854
             }
           }
         ],
@@ -868,7 +868,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42437
+              "duration": 16284
             }
           }
         ]
@@ -897,7 +897,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39359
+              "duration": 14044
             }
           },
           {
@@ -906,7 +906,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57361
+              "duration": 19680
             }
           },
           {
@@ -915,7 +915,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 58979
+              "duration": 48703
             }
           }
         ],
@@ -925,14 +925,14 @@
             "name": "that I have a invalid creation contract whit fields maximum character limit \"idCustomer\"",
             "line": 56,
             "output": [
-              "orderCode: 60400322\n"
+              "orderCode: 60427363\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 4116401
+              "duration": 2839278
             }
           },
           {
@@ -940,7 +940,7 @@
             "name": "I send the requisition",
             "line": 57,
             "output": [
-              "{\"ownId\"=>\"60400322\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>9500}], \"customer\"=>{\"id\"=>\"CUS-DF83DIPABEER\"}}",
+              "{\"ownId\"=>\"60427363\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>9500}], \"customer\"=>{\"id\"=>\"CUS-DF83DIPABEER\"}}",
               "Response => {\"errors\":[{\"code\":\"CUS-039\",\"path\":\"customer.id\",\"description\":\"Cliente n��o encontrado\"}]}\n\n"
             ],
             "match": {
@@ -948,7 +948,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 677180928
+              "duration": 663808559
             }
           },
           {
@@ -964,7 +964,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5066636
+              "duration": 5135225
             }
           }
         ],
@@ -975,7 +975,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44757
+              "duration": 39410
             }
           }
         ]
@@ -1026,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 58303
+              "duration": 38959
             }
           },
           {
@@ -1035,7 +1035,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72951
+              "duration": 64818
             }
           },
           {
@@ -1044,7 +1044,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 157900
+              "duration": 145275
             }
           }
         ],
@@ -1054,14 +1054,14 @@
             "name": "that I have a valid creation contract",
             "line": 8,
             "output": [
-              "orderCode: 60400323\n"
+              "orderCode: 60427364\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:3"
             },
             "result": {
               "status": "passed",
-              "duration": 3335276
+              "duration": 3010173
             }
           },
           {
@@ -1069,15 +1069,15 @@
             "name": "I send the requisition",
             "line": 9,
             "output": [
-              "{\"ownId\"=>\"60400323\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Weihenstephaner Hefeweissbier\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Hybrid Beer\", \"price\"=>1557}], \"customer\"=>{\"ownId\"=>\"60400323\", \"fullname\"=>\"Scott Ryan\", \"email\"=>\"orlando@block.io\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"70341255467\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"385112145\"}, \"shippingAddress\"=>{\"street\"=>\"Vance Garden\", \"streetNumber\"=>\"54958\", \"complement\"=>\"Casa\", \"district\"=>\"Pinheiros\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
-              "Response => {\"id\":\"ORD-BKC8VJ5EYQTG\",\"ownId\":\"60400323\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:32:04.202-03\",\"updatedAt\":\"2019-06-13T01:32:04.202-03\",\"amount\":{\"paid\":0,\"total\":2557,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1557}},\"items\":[{\"price\":1557,\"detail\":\"Light Hybrid Beer\",\"quantity\":1,\"product\":\"Weihenstephaner Hefeweissbier\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-A2SJ5M50UKDB\",\"ownId\":\"60400323\",\"fullname\":\"Scott Ryan\",\"createdAt\":\"2019-06-13T01:32:04.204-03\",\"updatedAt\":\"2019-06-13T01:32:04.208-03\",\"birthDate\":\"1988-12-30\",\"email\":\"orlando@block.io\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"85112145\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"70341255467\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Vance Garden\",\"streetNumber\":\"54958\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-A2SJ5M50UKDB\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=7c05297c-aad2-484c-ba16-d3d85ce2cf9f&id=CUS-A2SJ5M50UKDB&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:32:04.202-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2557,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Vance Garden\",\"streetNumber\":\"54958\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-BKC8VJ5EYQTG\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-BKC8VJ5EYQTG\"}}}}\n\n"
+              "{\"ownId\"=>\"60427364\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Sapporo Premium\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Belgian And French Ale\", \"price\"=>2243}], \"customer\"=>{\"ownId\"=>\"60427364\", \"fullname\"=>\"Roscoe Nikolaus\", \"email\"=>\"jolieswift@ryan.co\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"23666043275\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"335790545\"}, \"shippingAddress\"=>{\"street\"=>\"Ronald Falls\", \"streetNumber\"=>\"792\", \"complement\"=>\"Casa\", \"district\"=>\"Santana\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-4CCJRPV0GZ3R\",\"ownId\":\"60427364\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T09:02:45.277-03\",\"updatedAt\":\"2019-06-13T09:02:45.277-03\",\"amount\":{\"paid\":0,\"total\":3243,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":2243}},\"items\":[{\"price\":2243,\"detail\":\"Belgian And French Ale\",\"quantity\":1,\"product\":\"Sapporo Premium\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-0RHC3C0J0W0C\",\"ownId\":\"60427364\",\"fullname\":\"Roscoe Nikolaus\",\"createdAt\":\"2019-06-13T09:02:45.278-03\",\"updatedAt\":\"2019-06-13T09:02:45.281-03\",\"birthDate\":\"1988-12-30\",\"email\":\"jolieswift@ryan.co\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"35790545\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"23666043275\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Ronald Falls\",\"streetNumber\":\"792\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-0RHC3C0J0W0C\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=d4c2d8c8-f897-4612-a1d4-66e71425b55a&id=CUS-0RHC3C0J0W0C&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T09:02:45.277-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":3243,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Ronald Falls\",\"streetNumber\":\"792\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-4CCJRPV0GZ3R\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9b99f5e8-3836-4cb0-a26c-597b70067625&id=ORD-4CCJRPV0GZ3R\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9b99f5e8-3836-4cb0-a26c-597b70067625&id=ORD-4CCJRPV0GZ3R&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9b99f5e8-3836-4cb0-a26c-597b70067625&id=ORD-4CCJRPV0GZ3R&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-4CCJRPV0GZ3R\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 727072214
+              "duration": 720677666
             }
           },
           {
@@ -1085,14 +1085,14 @@
             "name": "I receive confirmation of the creation",
             "line": 10,
             "output": [
-              "Id Wirecard: ORD-BKC8VJ5EYQTG\n\n"
+              "Id Wirecard: ORD-4CCJRPV0GZ3R\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5116575
+              "duration": 5392561
             }
           },
           {
@@ -1100,15 +1100,15 @@
             "name": "I send the requisition to create a payment",
             "line": 11,
             "output": [
-              "{\"installmentCount\"=>1, \"statementDescriptor\"=>\"pitasbeer.com\", \"fundingInstrument\"=>{\"method\"=>\"CREDIT_CARD\", \"creditCard\"=>{\"expirationMonth\"=>\"12\", \"expirationYear\"=>\"22\", \"number\"=>\"5555666677778884\", \"cvc\"=>\"123\", \"store\"=>true, \"holder\"=>{\"fullname\"=>\"Elliot Kub\", \"birthdate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"67935564280\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"967788997\"}}}}, \"device\"=>{\"ip\"=>\"127.0.0.1\", \"geolocation\"=>{\"latitude\"=>-33.867, \"longitude\"=>151.206}, \"userAgent\"=>\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\", \"fingerprint\"=>\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"}}",
-              "Response => {\"id\":\"PAY-U7CUWN9HRI7Z\",\"status\":\"IN_ANALYSIS\",\"delayCapture\":false,\"amount\":{\"total\":2557,\"gross\":2557,\"fees\":0,\"refunds\":0,\"liquid\":2557,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-XGOHNWHA39RY\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true,\"holder\":{\"birthdate\":\"1988-12-30\",\"birthDate\":\"1988-12-30\",\"taxDocument\":{\"type\":\"CPF\",\"number\":\"67935564280\"},\"fullname\":\"Elliot Kub\"}},\"method\":\"CREDIT_CARD\"},\"acquirerDetails\":{\"authorizationNumber\":\"T12996\",\"taxDocument\":{\"type\":\"CNPJ\",\"number\":\"01027058000191\"}},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.IN_ANALYSIS\",\"createdAt\":\"2019-06-13T01:32:05.272-03\"},{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T01:32:04.935-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2557,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"device\":{\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\",\"ip\":\"127.0.0.1\",\"geolocation\":{\"latitude\":-33.867,\"longitude\":151.206},\"fingerprint\":\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-U7CUWN9HRI7Z\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-BKC8VJ5EYQTG\",\"title\":\"ORD-BKC8VJ5EYQTG\"}},\"createdAt\":\"2019-06-13T01:32:04.935-03\",\"updatedAt\":\"2019-06-13T01:32:05.272-03\"}\n\n"
+              "{\"installmentCount\"=>1, \"statementDescriptor\"=>\"pitasbeer.com\", \"fundingInstrument\"=>{\"method\"=>\"CREDIT_CARD\", \"creditCard\"=>{\"expirationMonth\"=>\"12\", \"expirationYear\"=>\"22\", \"number\"=>\"5555666677778884\", \"cvc\"=>\"123\", \"store\"=>true, \"holder\"=>{\"fullname\"=>\"Toni Anderson\", \"birthdate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"59953814155\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"967788997\"}}}}, \"device\"=>{\"ip\"=>\"127.0.0.1\", \"geolocation\"=>{\"latitude\"=>-33.867, \"longitude\"=>151.206}, \"userAgent\"=>\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\", \"fingerprint\"=>\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"}}",
+              "Response => {\"id\":\"PAY-16392BYX163A\",\"status\":\"IN_ANALYSIS\",\"delayCapture\":false,\"amount\":{\"total\":3243,\"gross\":3243,\"fees\":0,\"refunds\":0,\"liquid\":3243,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-680RLZFKNQGM\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true,\"holder\":{\"birthdate\":\"1988-12-30\",\"birthDate\":\"1988-12-30\",\"taxDocument\":{\"type\":\"CPF\",\"number\":\"59953814155\"},\"fullname\":\"Toni Anderson\"}},\"method\":\"CREDIT_CARD\"},\"acquirerDetails\":{\"authorizationNumber\":\"T12996\",\"taxDocument\":{\"type\":\"CNPJ\",\"number\":\"01027058000191\"}},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.IN_ANALYSIS\",\"createdAt\":\"2019-06-13T09:02:46.468-03\"},{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T09:02:46.036-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":3243,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"device\":{\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\",\"ip\":\"127.0.0.1\",\"geolocation\":{\"latitude\":-33.867,\"longitude\":151.206},\"fingerprint\":\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-16392BYX163A\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-4CCJRPV0GZ3R\",\"title\":\"ORD-4CCJRPV0GZ3R\"}},\"createdAt\":\"2019-06-13T09:02:46.036-03\",\"updatedAt\":\"2019-06-13T09:02:46.468-03\"}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:45"
             },
             "result": {
               "status": "passed",
-              "duration": 1049239828
+              "duration": 1153979813
             }
           },
           {
@@ -1116,15 +1116,15 @@
             "name": "I receive confirmation of the creation of payment",
             "line": 12,
             "output": [
-              "Payment id Wirecard: PAY-U7CUWN9HRI7Z\n\n",
-              "Payment amount: 2557\n\n"
+              "Payment id Wirecard: PAY-16392BYX163A\n\n",
+              "Payment amount: 3243\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:61"
             },
             "result": {
               "status": "passed",
-              "duration": 4637183
+              "duration": 5191729
             }
           },
           {
@@ -1136,7 +1136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13345944434
+              "duration": 14124158845
             }
           },
           {
@@ -1148,7 +1148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3160136361
+              "duration": 3599719694
             }
           }
         ],
@@ -1159,7 +1159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 61529841
+              "duration": 64136390
             }
           }
         ]
@@ -1188,7 +1188,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22882
+              "duration": 39873
             }
           },
           {
@@ -1197,7 +1197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41874
+              "duration": 58321
             }
           },
           {
@@ -1206,7 +1206,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72525
+              "duration": 129109
             }
           }
         ],
@@ -1216,14 +1216,14 @@
             "name": "that I have a valid creation contract",
             "line": 19,
             "output": [
-              "orderCode: 60400341\n"
+              "orderCode: 60427384\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:3"
             },
             "result": {
               "status": "passed",
-              "duration": 5207091
+              "duration": 5497441
             }
           },
           {
@@ -1231,15 +1231,15 @@
             "name": "I send the requisition",
             "line": 20,
             "output": [
-              "{\"ownId\"=>\"60400341\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Trois Pistoles\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"German Wheat And Rye Beer\", \"price\"=>1635}], \"customer\"=>{\"ownId\"=>\"60400341\", \"fullname\"=>\"Valentine Zboncak II\", \"email\"=>\"ricky@koelpin.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"91381679137\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"417383788\"}, \"shippingAddress\"=>{\"street\"=>\"Renner Plaza\", \"streetNumber\"=>\"68259\", \"complement\"=>\"Casa\", \"district\"=>\"Moema\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
-              "Response => {\"id\":\"ORD-R2T23S959VYZ\",\"ownId\":\"60400341\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:32:22.561-03\",\"updatedAt\":\"2019-06-13T01:32:22.561-03\",\"amount\":{\"paid\":0,\"total\":2635,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1635}},\"items\":[{\"price\":1635,\"detail\":\"German Wheat And Rye Beer\",\"quantity\":1,\"product\":\"Trois Pistoles\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-GRJYCWIMRY4O\",\"ownId\":\"60400341\",\"fullname\":\"Valentine Zboncak II\",\"createdAt\":\"2019-06-13T01:32:22.563-03\",\"updatedAt\":\"2019-06-13T01:32:22.566-03\",\"birthDate\":\"1988-12-30\",\"email\":\"ricky@koelpin.com\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"17383788\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"91381679137\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Renner Plaza\",\"streetNumber\":\"68259\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-GRJYCWIMRY4O\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=eca061ae-a31f-4555-a4b8-a404fcc23efa&id=CUS-GRJYCWIMRY4O&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:32:22.561-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2635,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Renner Plaza\",\"streetNumber\":\"68259\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-R2T23S959VYZ\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-R2T23S959VYZ\"}}}}\n\n"
+              "{\"ownId\"=>\"60427384\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Bell’s Expedition\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"English Brown Ale\", \"price\"=>1427}], \"customer\"=>{\"ownId\"=>\"60427384\", \"fullname\"=>\"Jordan Dickens\", \"email\"=>\"lillywaters@mcdermottstokes.biz\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"67000130113\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"518769907\"}, \"shippingAddress\"=>{\"street\"=>\"Allan Fall\", \"streetNumber\"=>\"9351\", \"complement\"=>\"Casa\", \"district\"=>\"Pinheiros\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-WDPLLMMYJ911\",\"ownId\":\"60427384\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T09:03:04.968-03\",\"updatedAt\":\"2019-06-13T09:03:04.968-03\",\"amount\":{\"paid\":0,\"total\":2427,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1427}},\"items\":[{\"price\":1427,\"detail\":\"English Brown Ale\",\"quantity\":1,\"product\":\"Bell���s Expedition\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-5EZO634EWPMT\",\"ownId\":\"60427384\",\"fullname\":\"Jordan Dickens\",\"createdAt\":\"2019-06-13T09:03:04.969-03\",\"updatedAt\":\"2019-06-13T09:03:04.972-03\",\"birthDate\":\"1988-12-30\",\"email\":\"lillywaters@mcdermottstokes.biz\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"18769907\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"67000130113\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Allan Fall\",\"streetNumber\":\"9351\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-5EZO634EWPMT\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=ce987600-0b1f-4256-b059-8d29044e83ce&id=CUS-5EZO634EWPMT&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T09:03:04.968-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2427,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Allan Fall\",\"streetNumber\":\"9351\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-WDPLLMMYJ911\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=68a24ff4-86e8-410b-bc2c-b7a85af805ef&id=ORD-WDPLLMMYJ911\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=68a24ff4-86e8-410b-bc2c-b7a85af805ef&id=ORD-WDPLLMMYJ911&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=68a24ff4-86e8-410b-bc2c-b7a85af805ef&id=ORD-WDPLLMMYJ911&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-WDPLLMMYJ911\"}}}}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 709506786
+              "duration": 719567574
             }
           },
           {
@@ -1247,14 +1247,14 @@
             "name": "I receive confirmation of the creation",
             "line": 21,
             "output": [
-              "Id Wirecard: ORD-R2T23S959VYZ\n\n"
+              "Id Wirecard: ORD-WDPLLMMYJ911\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5235018
+              "duration": 1745362
             }
           },
           {
@@ -1263,14 +1263,14 @@
             "line": 22,
             "output": [
               "{\"statementDescriptor\"=>\"pitasbeer.com\", \"fundingInstrument\"=>{\"method\"=>\"BOLETO\", \"boleto\"=>{\"expirationDate\"=>\"2020-06-20\", \"instructionLines\"=>{\"first\"=>\"Atenção,\", \"second\"=>\"fique atento à data de vencimento do boleto.\", \"third\"=>\"Pague em qualquer casa lotérica.\"}, \"logoUri\"=>\"http://www.pitasbeer.com.br/logo.jpg\"}}}",
-              "Response => {\"id\":\"PAY-5NE6MJGHORGX\",\"status\":\"WAITING\",\"delayCapture\":false,\"amount\":{\"total\":2635,\"gross\":2635,\"fees\":0,\"refunds\":0,\"liquid\":2635,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"boleto\":{\"expirationDate\":\"2020-06-20\",\"lineCode\":\"00190.00009 01014.051005 00000.787176 7 72370000001000\",\"logoUri\":\"http://www.pitasbeer.com.br/logo.jpg\",\"instructionLines\":{\"first\":\"Aten����o,\",\"second\":\"fique atento �� data de vencimento do boleto.\",\"third\":\"Pague em qualquer casa lot��rica.\"}},\"method\":\"BOLETO\"},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T01:32:23.309-03\"},{\"type\":\"PAYMENT.WAITING\",\"createdAt\":\"2019-06-13T01:32:23.309-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2635,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-5NE6MJGHORGX\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-R2T23S959VYZ\",\"title\":\"ORD-R2T23S959VYZ\"},\"payBoleto\":{\"printHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-YR10BWIH68O4/print\",\"redirectHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-YR10BWIH68O4\"}},\"createdAt\":\"2019-06-13T01:32:23.309-03\",\"updatedAt\":\"2019-06-13T01:32:23.309-03\"}\n\n"
+              "Response => {\"id\":\"PAY-BBF9RP6YC8ZT\",\"status\":\"WAITING\",\"delayCapture\":false,\"amount\":{\"total\":2427,\"gross\":2427,\"fees\":0,\"refunds\":0,\"liquid\":2427,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"boleto\":{\"expirationDate\":\"2020-06-20\",\"lineCode\":\"00190.00009 01014.051005 00000.787176 7 72370000001000\",\"logoUri\":\"http://www.pitasbeer.com.br/logo.jpg\",\"instructionLines\":{\"first\":\"Aten����o,\",\"second\":\"fique atento �� data de vencimento do boleto.\",\"third\":\"Pague em qualquer casa lot��rica.\"}},\"method\":\"BOLETO\"},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T09:03:05.699-03\"},{\"type\":\"PAYMENT.WAITING\",\"createdAt\":\"2019-06-13T09:03:05.699-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2427,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-BBF9RP6YC8ZT\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-WDPLLMMYJ911\",\"title\":\"ORD-WDPLLMMYJ911\"},\"payBoleto\":{\"printHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-P4IBLOF2UY5G/print\",\"redirectHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-P4IBLOF2UY5G\"}},\"createdAt\":\"2019-06-13T09:03:05.699-03\",\"updatedAt\":\"2019-06-13T09:03:05.699-03\"}\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1064052198
+              "duration": 1119475026
             }
           },
           {
@@ -1278,15 +1278,15 @@
             "name": "I receive confirmation of the creation of payment",
             "line": 23,
             "output": [
-              "Payment id Wirecard: PAY-5NE6MJGHORGX\n\n",
-              "Payment amount: 2635\n\n"
+              "Payment id Wirecard: PAY-BBF9RP6YC8ZT\n\n",
+              "Payment amount: 2427\n\n"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:61"
             },
             "result": {
               "status": "passed",
-              "duration": 5019960
+              "duration": 4903307
             }
           },
           {
@@ -1294,14 +1294,14 @@
             "name": "I approve the payment using of API authorize",
             "line": 24,
             "output": [
-              "Approve order ORD-R2T23S959VYZ with payment PAY-5NE6MJGHORGX and total 2635"
+              "Approve order ORD-WDPLLMMYJ911 with payment PAY-BBF9RP6YC8ZT and total 2427"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:83"
             },
             "result": {
               "status": "passed",
-              "duration": 1259549097
+              "duration": 1261894999
             }
           },
           {
@@ -1313,7 +1313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8400178258
+              "duration": 8315308858
             }
           },
           {
@@ -1325,7 +1325,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3202190869
+              "duration": 3153676059
             }
           }
         ],
@@ -1336,7 +1336,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75126192
+              "duration": 72686500
             }
           }
         ]

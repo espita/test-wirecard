@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 # encode: UTF-8
 
 class MoipAPI

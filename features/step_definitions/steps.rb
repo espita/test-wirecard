@@ -22,10 +22,8 @@ Given(/^that I have a invalid creation contract whit field different currency "(
 end
 
 When(/^I send the requisition$/) do
-  puts @order
   @response = HttpHelper.new.post('v2/orders', @order)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
-  puts "Response => #{temp}\n\n"
 end
 
 Then(/^I receive confirmation of the creation$/) do
@@ -44,18 +42,16 @@ end
 
 Then(/^I send the requisition to create a payment$/) do
   @payment = MoipAPI.new.generate_payment
-  puts @payment
+
   @response = HttpHelper.new.post("v2/orders/#{@id}/payments", @payment)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
-  puts "Response => #{temp}\n\n"
 end
 
 Then(/^I send the requisition to create a payment to bank slip$/) do
   @payment = MoipAPI.new.generate_payment(type = false)
-  puts @payment
+
   @response = HttpHelper.new.post("v2/orders/#{@id}/payments", @payment)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
-  puts "Response => #{temp}\n\n"
 end
 
 Then(/^I receive confirmation of the creation of payment$/) do
@@ -73,9 +69,7 @@ Then(/^I access my wirecard account$/) do
 end
 
 Then(/^the payment status of order must be pago$/) do
-     #page.find('.close')
-     #page.find('.close').click
-  click_on $order_code.to_s
+  click_on $order_code.to_s.to_s
   expect(page).to have_content(@id_payment)
   expect(page).to have_content('Pago')
 end

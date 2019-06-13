@@ -1,10 +1,12 @@
 # test-wirecard
 * * *
+
 #### Information
 This is the automated test project for Kerberus-api project. Designed using Ruby as language and Cubumber as BDD framework, it intends to work as a side project.
 
 #### Requirement
 Ruby version 2.6 and upper
+Chrome-driver
 
 ----
 #### Installation
@@ -12,12 +14,11 @@ Ruby version 2.6 and upper
 
 ```
 git clone https://github.com/espita/test-wirecard
+sudo apt-get install chromium-chromedriver
 ```
 Within the project folder
 ```
 gem install bundler
-```
-```
 bundle install
 ```
 #### rubygems
@@ -30,9 +31,6 @@ bundle install
 * httparty
 * pry
 * jsonpath
-* test-unit
-* minitest
-* xpath
 * gherkin
 * json-minify
 * faker
