@@ -20,6 +20,218 @@
     ],
     "elements": [
       {
+        "id": "creating-a-order;creating-a-valid-order-one-item",
+        "keyword": "Scenario",
+        "name": "Creating a valid order one item",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@one_item",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21350
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25934
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71587
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a valid creation contract",
+            "line": 8,
+            "output": [
+              "orderCode: 60400316\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1052977650
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 9,
+            "output": [
+              "{\"ownId\"=>\"60400316\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Arrogant Bastard Ale\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Lager\", \"price\"=>1978}], \"customer\"=>{\"ownId\"=>\"60400316\", \"fullname\"=>\"Hollie Hettinger\", \"email\"=>\"eunicehayes@toy.biz\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"96097130767\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"295943875\"}, \"shippingAddress\"=>{\"street\"=>\"Lyle Skyway\", \"streetNumber\"=>\"3029\", \"complement\"=>\"Casa\", \"district\"=>\"Santana\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-I5KGOYAQO0HG\",\"ownId\":\"60400316\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:57.847-03\",\"updatedAt\":\"2019-06-13T01:31:57.847-03\",\"amount\":{\"paid\":0,\"total\":2978,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1978}},\"items\":[{\"price\":1978,\"detail\":\"Light Lager\",\"quantity\":1,\"product\":\"Arrogant Bastard Ale\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-AR6VZA4WMRQL\",\"ownId\":\"60400316\",\"fullname\":\"Hollie Hettinger\",\"createdAt\":\"2019-06-13T01:31:57.849-03\",\"updatedAt\":\"2019-06-13T01:31:57.852-03\",\"birthDate\":\"1988-12-30\",\"email\":\"eunicehayes@toy.biz\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"95943875\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"96097130767\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Lyle Skyway\",\"streetNumber\":\"3029\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-AR6VZA4WMRQL\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=ba2f0b14-d402-4e70-88cd-bb780997f37d&id=CUS-AR6VZA4WMRQL&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:57.847-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2978,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Lyle Skyway\",\"streetNumber\":\"3029\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Santana\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-I5KGOYAQO0HG\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=c2d21628-5ef8-4fa8-8522-c0cdf54ee771&id=ORD-I5KGOYAQO0HG&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-I5KGOYAQO0HG\"}}}}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 745187663
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 10,
+            "output": [
+              "Id Wirecard: ORD-I5KGOYAQO0HG\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5033655
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78293
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;creating-a-valid-order-two-item",
+        "keyword": "Scenario",
+        "name": "Creating a valid order two item",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@two_item",
+            "line": 12
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15825
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25469
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53848
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a valid creation contract whit two item",
+            "line": 14,
+            "output": [
+              "orderCode: 60400317\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6944016
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 15,
+            "output": [
+              "{\"ownId\"=>\"60400317\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Dreadnaught IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Fruit Beer\", \"price\"=>2062}, {\"product\"=>\"Weihenstephaner Hefeweissbier\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Lager\", \"price\"=>2692}], \"customer\"=>{\"ownId\"=>\"60400317\", \"fullname\"=>\"Nicol Hayes\", \"email\"=>\"kendallschuster@walker.net\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"14079909420\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"339354651\"}, \"shippingAddress\"=>{\"street\"=>\"Helga Rest\", \"streetNumber\"=>\"350\", \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-VPSVKUAX2HK8\",\"ownId\":\"60400317\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:58.599-03\",\"updatedAt\":\"2019-06-13T01:31:58.599-03\",\"amount\":{\"paid\":0,\"total\":5754,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":4754}},\"items\":[{\"price\":2062,\"detail\":\"Fruit Beer\",\"quantity\":1,\"product\":\"Dreadnaught IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"},{\"price\":2692,\"detail\":\"Light Lager\",\"quantity\":1,\"product\":\"Weihenstephaner Hefeweissbier\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-FFA6GN42QCQF\",\"ownId\":\"60400317\",\"fullname\":\"Nicol Hayes\",\"createdAt\":\"2019-06-13T01:31:58.601-03\",\"updatedAt\":\"2019-06-13T01:31:58.604-03\",\"birthDate\":\"1988-12-30\",\"email\":\"kendallschuster@walker.net\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"39354651\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"14079909420\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Helga Rest\",\"streetNumber\":\"350\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-FFA6GN42QCQF\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=9fbf02cb-8da7-4f28-890d-cef08a467521&id=CUS-FFA6GN42QCQF&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:58.599-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":5754,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Helga Rest\",\"streetNumber\":\"350\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-VPSVKUAX2HK8\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=a49596c9-e157-4570-a6df-c5b4d8283aaa&id=ORD-VPSVKUAX2HK8&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-VPSVKUAX2HK8\"}}}}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 756295893
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 16,
+            "output": [
+              "Id Wirecard: ORD-VPSVKUAX2HK8\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5019008
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38844
+            }
+          }
+        ]
+      },
+      {
         "id": "creating-a-order;creating-a-valid-order-existing-customer",
         "keyword": "Scenario",
         "name": "Creating a valid order existing customer",
@@ -43,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27189
+              "duration": 48696
             }
           },
           {
@@ -52,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39076
+              "duration": 98169
             }
           },
           {
@@ -61,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86853
+              "duration": 239115
             }
           }
         ],
@@ -71,14 +283,15 @@
             "name": "that I have a valid creation contract whit existing customer",
             "line": 20,
             "output": [
-              "orderCode: 60313492\n"
+              "orderCode: 60400318\n",
+              "{\"ownId\"=>\"60400318\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1173}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}"
             ],
             "match": {
               "location": "features/step_definitions/steps.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1743187
+              "duration": 7046479
             }
           },
           {
@@ -86,28 +299,30 @@
             "name": "I send the requisition",
             "line": 21,
             "output": [
-              "60313492",
-              "Response => {\"errors\":[{\"code\":\"API-1\",\"description\":\"Estrutura de JSON inv��lida (Expected BEGIN_OBJECT but was STRING at line 1 column 2)\"}]}\n\n"
+              "{\"ownId\"=>\"60400318\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>1173}], \"customer\"=>{\"id\"=>\"CUS-DF83DERLXE03\"}}",
+              "Response => {\"id\":\"ORD-33MWCJ97939O\",\"ownId\":\"60400318\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:31:59.374-03\",\"updatedAt\":\"2019-06-13T01:31:59.374-03\",\"amount\":{\"paid\":0,\"total\":2673,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1500,\"addition\":0,\"discount\":0,\"items\":1173}},\"items\":[{\"price\":1173,\"detail\":\"India Pale Ale Cervejas IPA e o seu cl��ssico amargor.\",\"quantity\":1,\"product\":\"Hercules Double IPA\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"customer\":{\"id\":\"CUS-DF83DERLXE03\",\"ownId\":\"12345601\",\"fullname\":\"Jose Silva\",\"createdAt\":\"2019-06-10T18:11:10.000-03\",\"updatedAt\":\"2019-06-13T01:31:59.382-03\",\"birthDate\":\"1988-12-30\",\"email\":\"nome@email.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"},\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"66778899\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"22222222222\"},\"addresses\":[{\"city\":\"Sao Paulo\",\"complement\":\"8\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"zipCode\":\"01234000\",\"district\":\"Itaim\",\"state\":\"SP\",\"type\":\"SHIPPING\",\"country\":\"BRA\"}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Avenida Faria Lima\",\"streetNumber\":\"2927\",\"complement\":\"8\",\"city\":\"Sao Paulo\",\"district\":\"Itaim\",\"state\":\"SP\",\"country\":\"BRA\"},\"moipAccount\":{\"id\":\"MPA-PQ0H8UZYNNWY\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-DF83DERLXE03\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=d6d4e356-3b87-4716-a025-1e162b14146e&id=CUS-DF83DERLXE03&mpa=MPA-7026D0894395\"}},\"fundingInstruments\":[{\"creditCard\":{\"id\":\"CRC-FFOF7FL6FRGK\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true},\"method\":\"CREDIT_CARD\"}]},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:31:59.374-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2673,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-33MWCJ97939O\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=6f694b2d-eb7a-4ab0-853c-a9fc82812c70&id=ORD-33MWCJ97939O&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-33MWCJ97939O\"}}}}\n\n"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:23"
+              "location": "features/step_definitions/steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 45563497462
+              "duration": 771551553
             }
           },
           {
             "keyword": "Then ",
             "name": "I receive confirmation of the creation",
             "line": 22,
+            "output": [
+              "Id Wirecard: ORD-33MWCJ97939O\n\n"
+            ],
             "match": {
               "location": "features/step_definitions/steps.rb:31"
             },
             "result": {
-              "status": "failed",
-              "error_message": "\n• RESPONSE CODE: 400\n                  \n• RESPONSE ERROR MSG: Bad Request\n                  \n• RESPONSE BODY: {\"errors\":[{\"code\":\"API-1\",\"description\":\"Estrutura de JSON inválida (Expected BEGIN_OBJECT but was STRING at line 1 column 2)\"}]}\n                  \n• RESPONSE HEADERS: {\"server\"=>[\"nginx\"], \"date\"=>[\"Wed, 12 Jun 2019 04:25:37 GMT\"], \"content-type\"=>[\"application/json\"], \"content-length\"=>[\"131\"], \"connection\"=>[\"close\"], \"x-content-type-options\"=>[\"nosniff\"], \"vary\"=>[\"Accept-Encoding, Origin\"]}\n                  \n• REQUEST BODY: \n                  \n\n\n (RuntimeError)\n./features/classes/http_helper.rb:22:in `handler'\n./features/step_definitions/steps.rb:32:in `/^I receive confirmation of the creation$/'\nfeatures/orders_wirecard.feature:22:in `Then I receive confirmation of the creation'",
-              "duration": 5182933
+              "status": "passed",
+              "duration": 5108335
             }
           }
         ],
@@ -118,7 +333,1010 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23807
+              "duration": 41178
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-ownid-more-then-45-characters",
+        "keyword": "Scenario",
+        "name": "Validate field ownId more then 45 characters",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@ownId",
+            "line": 24
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13834
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21456
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57055
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"ownId\"",
+            "line": 26,
+            "output": [
+              "orderCode: 60400319\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1766893
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 27,
+            "output": [
+              "{\"ownId\"=>\"5FAPNJSLCBALB2MDEEDBH74QYP6UYDOT69OQYJX3810X10K8\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"ORD-002\",\"path\":\"ownId\",\"description\":\"O identificador pr��prio de pedido deve ter no m��ximo 45 caracteres\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 654925154
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 28,
+            "output": [
+              "Field: ownId\n\n",
+              "Description: O identificador próprio de pedido deve ter no máximo 45 caracteres\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5024931
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40056
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-currency-with-american-currency-code",
+        "keyword": "Scenario",
+        "name": "Validate field currency with american currency code",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@currency",
+            "line": 30
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36608
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22449
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55215
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit field different currency \"idCurrency\"",
+            "line": 32,
+            "output": [
+              "orderCode: 60400320\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2747226
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 33,
+            "output": [
+              "{\"ownId\"=>\"60400320\", \"amount\"=>{\"currency\"=>\"VEF\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"-\",\"path\":\"amount.currency\",\"description\":\"Valor inv��lido para o campo, consulte a documenta����o\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 634315846
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 34,
+            "output": [
+              "Field: amount.currency\n\n",
+              "Description: Valor inválido para o campo, consulte a documentação\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4807305
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40843
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-currency-more-then-3-characters",
+        "keyword": "Scenario",
+        "name": "Validate field currency more then 3 characters",
+        "description": "",
+        "line": 37,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@currency",
+            "line": 36
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24309
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34134
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112404
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"currency\"",
+            "line": 38,
+            "output": [
+              "orderCode: 60400320\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1852890
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 39,
+            "output": [
+              "{\"ownId\"=>\"60400320\", \"amount\"=>{\"currency\"=>\"USDR\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"-\",\"path\":\"amount.currency\",\"description\":\"Valor inv��lido para o campo, consulte a documenta����o\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647909950
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 40,
+            "output": [
+              "Field: amount.currency\n\n",
+              "Description: Valor inválido para o campo, consulte a documentação\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4838752
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39019
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-product-more-then-250-characters",
+        "keyword": "Scenario",
+        "name": "Validate field product more then 250 characters",
+        "description": "",
+        "line": 43,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@product",
+            "line": 42
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18191
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30802
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79550
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"product\"",
+            "line": 44,
+            "output": [
+              "orderCode: 60400321\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2080307
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 45,
+            "output": [
+              "{\"ownId\"=>\"60400321\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Eos omnis molestias et neque excepturi laudantium sit facere non quibusdam corrupti iste facilis necessitatibus sequi quas in ad quia id sequi occaecati tempora illo voluptatem rerum et sed dolorum porro necessitatibus fugiat ea alias et eveniet iure asperiores commodi et fugiat autem velit quia ea laboriosam deleniti quo eius eligendi voluptate nihil ut cupiditate et qui reprehenderit amet totam vitae omnis consequatur incidunt harum debitis id omnis voluptas placeat tempore voluptatem maxime quia sit officiis sed tempore facilis repellendus est autem natus illum corporis ut nulla excepturi non nemo ut aliquid et expedita qui atque veniam quod deserunt eaque nesciunt harum suscipit et ipsa hic qui nemo dolore animi perferendis voluptatem quaerat earum numquam optio quis explicabo laudantium in non debitis veritatis similique dolorem non tenetur labore quasi voluptatum in mollitia dolor recusandae voluptatibus voluptatem est explicabo odio laborum aut ea molestiae eaque animi fugit fugit aspernatur dignissimos esse nihil consectetur rem molestiae sit officiis reiciendis quasi provident at magni maiores enim doloribus molestiae possimus recusandae ab est odit ut perspiciatis dolorem natus officia dolores sit aut enim nam accusantium et eos delectus incidunt assumenda veritatis illo atque quae distinctio ducimus omnis iusto eum blanditiis velit id vitae fuga libero unde qui quis nam qui soluta culpa laborum repudiandae optio ipsam quidem voluptatem nostrum deleniti minus eius qui esse neque repellendus sunt similique quia possimus et ut adipisci ex autem hic aliquam molestiae quo et a et quibusdam doloremque quisquam occaecati est modi quae vel ad libero voluptates dolorem et.\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"Jose Silva\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"ORD-012\",\"path\":\"items[0].product\",\"description\":\"O nome do item deve ter no m��ximo 250 caracteres\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 661684671
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 46,
+            "output": [
+              "Field: items[0].product\n\n",
+              "Description: O nome do item deve ter no máximo 250 caracteres\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3842521
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17590
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-field-customer-unwritten",
+        "keyword": "Scenario",
+        "name": "Validate field customer unwritten",
+        "description": "",
+        "line": 49,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@customer",
+            "line": 48
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16488
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23575
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52163
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"customer\"",
+            "line": 50,
+            "output": [
+              "orderCode: 60400322\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1492038
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 51,
+            "output": [
+              "{\"ownId\"=>\"60400322\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor. As IPA, também conhecidas como India Pale Ale, são cervejas de alto amargor e geralmente de alto teor alcoólico.\", \"price\"=>1000}], \"customer\"=>{\"ownId\"=>\"12345601\", \"fullname\"=>\"\", \"email\"=>\"nome@email.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"22222222222\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"66778899\"}, \"shippingAddress\"=>{\"street\"=>\"Avenida Faria Lima\", \"streetNumber\"=>2927, \"complement\"=>\"Casa\", \"district\"=>\"Itaim\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"errors\":[{\"code\":\"CUS-002\",\"path\":\"customer.fullnameNotBlank\",\"description\":\"O nome n��o foi informado\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 660914490
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 52,
+            "output": [
+              "Field: customer.fullnameNotBlank\n\n",
+              "Description: O nome não foi informado\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5230814
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42437
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-order;validate-customer-id-field-not-existing",
+        "keyword": "Scenario",
+        "name": "Validate customer id field not existing",
+        "description": "",
+        "line": 55,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_order",
+            "line": 2
+          },
+          {
+            "name": "@customer",
+            "line": 54
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39359
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57361
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58979
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a invalid creation contract whit fields maximum character limit \"idCustomer\"",
+            "line": 56,
+            "output": [
+              "orderCode: 60400322\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4116401
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 57,
+            "output": [
+              "{\"ownId\"=>\"60400322\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1500}}, \"items\"=>[{\"product\"=>\"Hercules Double IPA\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"India Pale Ale Cervejas IPA e o seu clássico amargor.\", \"price\"=>9500}], \"customer\"=>{\"id\"=>\"CUS-DF83DIPABEER\"}}",
+              "Response => {\"errors\":[{\"code\":\"CUS-039\",\"path\":\"customer.id\",\"description\":\"Cliente n��o encontrado\"}]}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 677180928
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive message of error bad request",
+            "line": 58,
+            "output": [
+              "Field: customer.id\n\n",
+              "Description: Cliente não encontrado\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5066636
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44757
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/payment_wirecard.feature",
+    "id": "creating-a-payment",
+    "keyword": "Feature",
+    "name": "Creating a payment",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@create_payment",
+        "line": 2
+      }
+    ],
+    "comments": [
+      {
+        "value": "# encoding: utf-8",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "creating-a-payment;creating-order-with-valid-payment-credit-card",
+        "keyword": "Scenario",
+        "name": "Creating order with valid payment credit card",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_payment",
+            "line": 2
+          },
+          {
+            "name": "@order_paid",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58303
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72951
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157900
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a valid creation contract",
+            "line": 8,
+            "output": [
+              "orderCode: 60400323\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3335276
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 9,
+            "output": [
+              "{\"ownId\"=>\"60400323\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Weihenstephaner Hefeweissbier\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"Light Hybrid Beer\", \"price\"=>1557}], \"customer\"=>{\"ownId\"=>\"60400323\", \"fullname\"=>\"Scott Ryan\", \"email\"=>\"orlando@block.io\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"70341255467\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"385112145\"}, \"shippingAddress\"=>{\"street\"=>\"Vance Garden\", \"streetNumber\"=>\"54958\", \"complement\"=>\"Casa\", \"district\"=>\"Pinheiros\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-BKC8VJ5EYQTG\",\"ownId\":\"60400323\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:32:04.202-03\",\"updatedAt\":\"2019-06-13T01:32:04.202-03\",\"amount\":{\"paid\":0,\"total\":2557,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1557}},\"items\":[{\"price\":1557,\"detail\":\"Light Hybrid Beer\",\"quantity\":1,\"product\":\"Weihenstephaner Hefeweissbier\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-A2SJ5M50UKDB\",\"ownId\":\"60400323\",\"fullname\":\"Scott Ryan\",\"createdAt\":\"2019-06-13T01:32:04.204-03\",\"updatedAt\":\"2019-06-13T01:32:04.208-03\",\"birthDate\":\"1988-12-30\",\"email\":\"orlando@block.io\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"85112145\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"70341255467\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Vance Garden\",\"streetNumber\":\"54958\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-A2SJ5M50UKDB\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=7c05297c-aad2-484c-ba16-d3d85ce2cf9f&id=CUS-A2SJ5M50UKDB&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:32:04.202-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2557,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Vance Garden\",\"streetNumber\":\"54958\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Pinheiros\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-BKC8VJ5EYQTG\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=9dbc481d-d933-4f8c-90cc-a4b9a7fc7993&id=ORD-BKC8VJ5EYQTG&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-BKC8VJ5EYQTG\"}}}}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 727072214
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 10,
+            "output": [
+              "Id Wirecard: ORD-BKC8VJ5EYQTG\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5116575
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I send the requisition to create a payment",
+            "line": 11,
+            "output": [
+              "{\"installmentCount\"=>1, \"statementDescriptor\"=>\"pitasbeer.com\", \"fundingInstrument\"=>{\"method\"=>\"CREDIT_CARD\", \"creditCard\"=>{\"expirationMonth\"=>\"12\", \"expirationYear\"=>\"22\", \"number\"=>\"5555666677778884\", \"cvc\"=>\"123\", \"store\"=>true, \"holder\"=>{\"fullname\"=>\"Elliot Kub\", \"birthdate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"67935564280\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"967788997\"}}}}, \"device\"=>{\"ip\"=>\"127.0.0.1\", \"geolocation\"=>{\"latitude\"=>-33.867, \"longitude\"=>151.206}, \"userAgent\"=>\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\", \"fingerprint\"=>\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"}}",
+              "Response => {\"id\":\"PAY-U7CUWN9HRI7Z\",\"status\":\"IN_ANALYSIS\",\"delayCapture\":false,\"amount\":{\"total\":2557,\"gross\":2557,\"fees\":0,\"refunds\":0,\"liquid\":2557,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"creditCard\":{\"id\":\"CRC-XGOHNWHA39RY\",\"brand\":\"MASTERCARD\",\"first6\":\"555566\",\"last4\":\"8884\",\"store\":true,\"holder\":{\"birthdate\":\"1988-12-30\",\"birthDate\":\"1988-12-30\",\"taxDocument\":{\"type\":\"CPF\",\"number\":\"67935564280\"},\"fullname\":\"Elliot Kub\"}},\"method\":\"CREDIT_CARD\"},\"acquirerDetails\":{\"authorizationNumber\":\"T12996\",\"taxDocument\":{\"type\":\"CNPJ\",\"number\":\"01027058000191\"}},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.IN_ANALYSIS\",\"createdAt\":\"2019-06-13T01:32:05.272-03\"},{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T01:32:04.935-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2557,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"device\":{\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36\",\"ip\":\"127.0.0.1\",\"geolocation\":{\"latitude\":-33.867,\"longitude\":151.206},\"fingerprint\":\"QAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolpQAZXswedCVGrtgBNHyujMKIkolp\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-U7CUWN9HRI7Z\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-BKC8VJ5EYQTG\",\"title\":\"ORD-BKC8VJ5EYQTG\"}},\"createdAt\":\"2019-06-13T01:32:04.935-03\",\"updatedAt\":\"2019-06-13T01:32:05.272-03\"}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1049239828
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation of payment",
+            "line": 12,
+            "output": [
+              "Payment id Wirecard: PAY-U7CUWN9HRI7Z\n\n",
+              "Payment amount: 2557\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4637183
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I access my wirecard account",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/steps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13345944434
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the payment status of order must be pago",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/steps.rb:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3160136361
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61529841
+            }
+          }
+        ]
+      },
+      {
+        "id": "creating-a-payment;creating-order-with-valid-payment-bank-slip",
+        "keyword": "Scenario",
+        "name": "Creating order with valid payment bank slip",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_payment",
+            "line": 2
+          },
+          {
+            "name": "@order_paid_bankslip",
+            "line": 17
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22882
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41874
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hook.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72525
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have a valid creation contract",
+            "line": 19,
+            "output": [
+              "orderCode: 60400341\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5207091
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I send the requisition",
+            "line": 20,
+            "output": [
+              "{\"ownId\"=>\"60400341\", \"amount\"=>{\"currency\"=>\"BRL\", \"subtotals\"=>{\"shipping\"=>1000}}, \"items\"=>[{\"product\"=>\"Trois Pistoles\", \"category\"=>\"FOOD,_BEVERAGES_AND_TOBACCO\", \"quantity\"=>1, \"detail\"=>\"German Wheat And Rye Beer\", \"price\"=>1635}], \"customer\"=>{\"ownId\"=>\"60400341\", \"fullname\"=>\"Valentine Zboncak II\", \"email\"=>\"ricky@koelpin.com\", \"birthDate\"=>\"1988-12-30\", \"taxDocument\"=>{\"type\"=>\"CPF\", \"number\"=>\"91381679137\"}, \"phone\"=>{\"countryCode\"=>\"55\", \"areaCode\"=>\"11\", \"number\"=>\"417383788\"}, \"shippingAddress\"=>{\"street\"=>\"Renner Plaza\", \"streetNumber\"=>\"68259\", \"complement\"=>\"Casa\", \"district\"=>\"Moema\", \"city\"=>\"Sao Paulo\", \"state\"=>\"SP\", \"country\"=>\"BRA\", \"zipCode\"=>\"01234000\"}}}",
+              "Response => {\"id\":\"ORD-R2T23S959VYZ\",\"ownId\":\"60400341\",\"status\":\"CREATED\",\"platform\":\"V2\",\"createdAt\":\"2019-06-13T01:32:22.561-03\",\"updatedAt\":\"2019-06-13T01:32:22.561-03\",\"amount\":{\"paid\":0,\"total\":2635,\"fees\":0,\"refunds\":0,\"liquid\":0,\"otherReceivers\":0,\"currency\":\"BRL\",\"subtotals\":{\"shipping\":1000,\"addition\":0,\"discount\":0,\"items\":1635}},\"items\":[{\"price\":1635,\"detail\":\"German Wheat And Rye Beer\",\"quantity\":1,\"product\":\"Trois Pistoles\",\"category\":\"FOOD,_BEVERAGES_AND_TOBACCO\"}],\"customer\":{\"id\":\"CUS-GRJYCWIMRY4O\",\"ownId\":\"60400341\",\"fullname\":\"Valentine Zboncak II\",\"createdAt\":\"2019-06-13T01:32:22.563-03\",\"updatedAt\":\"2019-06-13T01:32:22.566-03\",\"birthDate\":\"1988-12-30\",\"email\":\"ricky@koelpin.com\",\"phone\":{\"countryCode\":\"55\",\"areaCode\":\"11\",\"number\":\"17383788\"},\"taxDocument\":{\"type\":\"CPF\",\"number\":\"91381679137\"},\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Renner Plaza\",\"streetNumber\":\"68259\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/customers/CUS-GRJYCWIMRY4O\"},\"hostedAccount\":{\"redirectHref\":\"https://hostedaccount-sandbox.moip.com.br?token=eca061ae-a31f-4555-a4b8-a404fcc23efa&id=CUS-GRJYCWIMRY4O&mpa=MPA-7026D0894395\"}}},\"payments\":[],\"escrows\":[],\"refunds\":[],\"entries\":[],\"events\":[{\"type\":\"ORDER.CREATED\",\"createdAt\":\"2019-06-13T01:32:22.561-03\",\"description\":\"\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2635,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"shippingAddress\":{\"zipCode\":\"01234000\",\"street\":\"Renner Plaza\",\"streetNumber\":\"68259\",\"complement\":\"Casa\",\"city\":\"Sao Paulo\",\"district\":\"Moema\",\"state\":\"SP\",\"country\":\"BRA\"},\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-R2T23S959VYZ\"},\"checkout\":{\"payCheckout\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ\"},\"payCreditCard\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ&payment-method=credit-card\"},\"payBoleto\":{\"redirectHref\":\"https://checkout-new-sandbox.moip.com.br?token=e02694bf-47f4-4756-843c-7712ebd1ec05&id=ORD-R2T23S959VYZ&payment-method=boleto\"},\"payOnlineBankDebitItau\":{\"redirectHref\":\"https://checkout-sandbox.moip.com.br/debit/itau/ORD-R2T23S959VYZ\"}}}}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 709506786
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation",
+            "line": 21,
+            "output": [
+              "Id Wirecard: ORD-R2T23S959VYZ\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5235018
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I send the requisition to create a payment to bank slip",
+            "line": 22,
+            "output": [
+              "{\"statementDescriptor\"=>\"pitasbeer.com\", \"fundingInstrument\"=>{\"method\"=>\"BOLETO\", \"boleto\"=>{\"expirationDate\"=>\"2020-06-20\", \"instructionLines\"=>{\"first\"=>\"Atenção,\", \"second\"=>\"fique atento à data de vencimento do boleto.\", \"third\"=>\"Pague em qualquer casa lotérica.\"}, \"logoUri\"=>\"http://www.pitasbeer.com.br/logo.jpg\"}}}",
+              "Response => {\"id\":\"PAY-5NE6MJGHORGX\",\"status\":\"WAITING\",\"delayCapture\":false,\"amount\":{\"total\":2635,\"gross\":2635,\"fees\":0,\"refunds\":0,\"liquid\":2635,\"currency\":\"BRL\"},\"installmentCount\":1,\"statementDescriptor\":\"pitasbeer.com\",\"fundingInstrument\":{\"boleto\":{\"expirationDate\":\"2020-06-20\",\"lineCode\":\"00190.00009 01014.051005 00000.787176 7 72370000001000\",\"logoUri\":\"http://www.pitasbeer.com.br/logo.jpg\",\"instructionLines\":{\"first\":\"Aten����o,\",\"second\":\"fique atento �� data de vencimento do boleto.\",\"third\":\"Pague em qualquer casa lot��rica.\"}},\"method\":\"BOLETO\"},\"fees\":[{\"type\":\"TRANSACTION\",\"amount\":0}],\"events\":[{\"type\":\"PAYMENT.CREATED\",\"createdAt\":\"2019-06-13T01:32:23.309-03\"},{\"type\":\"PAYMENT.WAITING\",\"createdAt\":\"2019-06-13T01:32:23.309-03\"}],\"receivers\":[{\"moipAccount\":{\"id\":\"MPA-7026D0894395\",\"login\":\"edson.pita.sp@gmail.com\",\"fullname\":\"Edson Pita Distribui����o e Com��rcio LTDA\"},\"type\":\"PRIMARY\",\"amount\":{\"total\":2635,\"currency\":\"BRL\",\"fees\":0,\"refunds\":0},\"feePayor\":true}],\"_links\":{\"self\":{\"href\":\"https://sandbox.moip.com.br/v2/payments/PAY-5NE6MJGHORGX\"},\"order\":{\"href\":\"https://sandbox.moip.com.br/v2/orders/ORD-R2T23S959VYZ\",\"title\":\"ORD-R2T23S959VYZ\"},\"payBoleto\":{\"printHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-YR10BWIH68O4/print\",\"redirectHref\":\"https://sandbox.moip.com.br/v2/boleto/BOL-YR10BWIH68O4\"}},\"createdAt\":\"2019-06-13T01:32:23.309-03\",\"updatedAt\":\"2019-06-13T01:32:23.309-03\"}\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1064052198
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I receive confirmation of the creation of payment",
+            "line": 23,
+            "output": [
+              "Payment id Wirecard: PAY-5NE6MJGHORGX\n\n",
+              "Payment amount: 2635\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5019960
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I approve the payment using of API authorize",
+            "line": 24,
+            "output": [
+              "Approve order ORD-R2T23S959VYZ with payment PAY-5NE6MJGHORGX and total 2635"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1259549097
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I access my wirecard account",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/steps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8400178258
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the payment status of order must be pago",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/steps.rb:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3202190869
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.22.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75126192
             }
           }
         ]

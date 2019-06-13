@@ -54,9 +54,9 @@ class MoipAPI
 
   def generate_order_existing_customer
     @order = YAML.load_file('./fixtures/order.yml')['customerId']
-
     @order['ownId'] = $order_code
-    #@order['items'][0]['price'] = Faker::Number.positive(1000, 2000)
+    @order['items'][0]['price'] = Faker::Number.positive(1000, 2000)
+    @order
   end
 
   def generate_order_invalid(field)
@@ -81,7 +81,7 @@ class MoipAPI
       @order['ownId'] = $order_code
       @order['customer']['fullname'] = ''
 
-    when 'customerId'
+    when 'idCustomer'
       @order = YAML.load_file('./fixtures/order.yml')['customerId']
       @order['ownId'] = $order_code
       @order['customer']['id'] = 'CUS-DF83DIPABEER'
@@ -90,10 +90,15 @@ class MoipAPI
     @order
   end
 
-  def generate_payment
-    @payment = YAML.load_file('./fixtures/payment.yml')
-    binding.pry
+  def generate_payment(type = true)
+    @payment = YAML.load_file('./fixtures/payment_card.yml')
+
     @payment['fundingInstrument']['creditCard']['holder']['fullname'] = Faker::Name.name
     @payment['fundingInstrument']['creditCard']['holder']['taxDocument']['number'] = Faker::CPF.numeric
+
+    if type == false
+      @payment = YAML.load_file('./fixtures/payment_bankslip.yml')
+    end
+    @payment
   end
 end

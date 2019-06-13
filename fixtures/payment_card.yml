@@ -1,6 +1,6 @@
 ---
 installmentCount: 1
-statementDescriptor: pitasbeer.com
+statementDescriptor: 'pitasbeer.com'
 fundingInstrument:
   method: CREDIT_CARD
   creditCard:

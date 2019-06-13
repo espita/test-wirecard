@@ -1,0 +1,11 @@
+---
+statementDescriptor: 'pitasbeer.com'
+fundingInstrument:
+  method: BOLETO
+  boleto:
+    expirationDate: '2020-06-20'
+    instructionLines:
+      first: Atenção,
+      second: fique atento à data de vencimento do boleto.
+      third: Pague em qualquer casa lotérica.
+    logoUri: http://www.pitasbeer.com.br/logo.jpg

@@ -10,6 +10,7 @@ end
 
 Given(/^that I have a valid creation contract whit existing customer$/) do
   @order = MoipAPI.new.generate_order_existing_customer
+  puts @order
 end
 
 Given(/^that I have a invalid creation contract whit fields maximum character limit "([^"]*)"$/) do |field|
@@ -22,7 +23,6 @@ end
 
 When(/^I send the requisition$/) do
   puts @order
-  binding.pry
   @response = HttpHelper.new.post('v2/orders', @order)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
   puts "Response => #{temp}\n\n"
@@ -48,13 +48,42 @@ Then(/^I send the requisition to create a payment$/) do
   @response = HttpHelper.new.post("v2/orders/#{@id}/payments", @payment)
   temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
   puts "Response => #{temp}\n\n"
+end
 
+Then(/^I send the requisition to create a payment to bank slip$/) do
+  @payment = MoipAPI.new.generate_payment(type = false)
+  puts @payment
+  @response = HttpHelper.new.post("v2/orders/#{@id}/payments", @payment)
+  temp = @response.body.to_s.encode('UTF-8', invalid: :replace, undef: :replace)
+  puts "Response => #{temp}\n\n"
+end
+
+Then(/^I receive confirmation of the creation of payment$/) do
+  HttpHelper.new.handler(@response, 201)
+  @id_payment = @response['id']
+  puts "Payment id Wirecard: #{@id_payment}\n\n"
+  @amount = @response['amount']['total']
+  puts "Payment amount: #{@amount}\n\n"
 end
 
 Then(/^I access my wirecard account$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  @login = Login.new
+  @login.logar
+  @login.modal
 end
 
 Then(/^the payment status of order must be pago$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+     #page.find('.close')
+     #page.find('.close').click
+  click_on $order_code.to_s
+  expect(page).to have_content(@id_payment)
+  expect(page).to have_content('Pago')
+end
+
+And(/^I approve the payment using of API authorize$/) do
+  2.times do
+    @response = HttpHelper.new.get("/simulador/authorize?amount=#{@amount}&payment_id=#{@id_payment}")
+    HttpHelper.new.handler(@response, 200)
+  end
+  puts "Approve order #{@id} with payment #{@id_payment} and total #{@amount}"
 end

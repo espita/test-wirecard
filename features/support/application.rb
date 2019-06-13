@@ -13,6 +13,9 @@ class ApplicationSettings
     $wirecard_url = {
       'qa' => 'https://sandbox.moip.com.br'
     }
+    $conta_wirecard = {
+      'qa' => 'https://conta-sandbox.moip.com.br'
+    }
 
     end
 end

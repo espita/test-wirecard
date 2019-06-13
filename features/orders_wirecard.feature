@@ -2,7 +2,7 @@
 @create_order
 
 Feature: Creating a order
-  
+
   @one_item
   Scenario: Creating a valid order one item
     Given that I have a valid creation contract
@@ -45,14 +45,14 @@ Feature: Creating a order
     When I send the requisition
     Then I receive message of error bad request
 
-@customer
+  @customer
   Scenario: Validate field customer unwritten
     Given that I have a invalid creation contract whit fields maximum character limit "customer"
     When I send the requisition
     Then I receive message of error bad request
 
-@customer
-  Scenario: Validate customer id field not existing 
-    Given that I have a invalid creation contract whit fields maximum character limit "customerId"
+  @customer
+  Scenario: Validate customer id field not existing
+    Given that I have a invalid creation contract whit fields maximum character limit "idCustomer"
     When I send the requisition
     Then I receive message of error bad request

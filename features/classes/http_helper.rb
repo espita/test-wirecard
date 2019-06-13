@@ -17,6 +17,15 @@ class HttpHelper
                   })
   end
 
+  def get(path)
+    HTTParty.get("#{$wirecard_url[$env]}/#{path}",
+                  headers: { 'Content-Type' => 'application/json', 'Content-Encoding' => 'UTF-8', 'charset' => 'utf-8' },
+                  basic_auth: {
+                    username: @auth['wirecard']['usr'],
+                    password: @auth['wirecard']['pass']
+                  })
+  end
+
   def handler(response, http_code)
     if response.code != http_code
       raise "\n• RESPONSE CODE: #{response.code}
@@ -29,6 +38,3 @@ class HttpHelper
   end
 end
 
-# "www.wirecard.com/v2/"
-# post("create/order", @order)
-# "www.wirecard.com/v2/create/order"
